@@ -1,0 +1,3565 @@
+ /* --=================== Start All Section Common CSS Style Here===================-- */
+ :root {
+     --h1_color: #1d1d1d;
+     --text-color: #11161E;
+     --primary_color_orange_light: #FF6F61;
+     --primary_color_orange_dark: #FF5645;
+     --primary_color_dark: #151A32;
+     --white_color: #FFFFFF;
+     --bg_color_light: #F1F1F1;
+     --bg_color_dark: #F1F3F4;
+     --black_color: #000000;
+     --p_color: #444444;
+     --primary_font: 'Josefin Sans', sans-serif;
+     --p_font: 'Poppins', sans-serif;
+ }
+
+ /* =====Start Color Class Here ===== */
+ .text_black {
+     color: var(--black_color);
+ }
+
+ .text_orange_light {
+     color: var(--primary_color_orange_light);
+ }
+
+ .bg_orange_light {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ /* =====End Color Class Here ===== */
+
+ .section_content h1 {
+     font-size: 64px;
+     font-weight: 700;
+     line-height: 74px;
+ }
+
+ .section_content h2 {
+     color: var(--white_color);
+     font-size: 48px;
+     font-weight: 700;
+     line-height: 58px;
+     margin-bottom: 16px;
+ }
+
+ .section_content h3 {
+     color: var(--text-color);
+     font-size: 36px;
+     line-height: 46px;
+     font-weight: 700;
+ }
+
+ .section_content h4 {
+     color: var(--white_color);
+     font-size: 24px;
+     line-height: 34px;
+     font-weight: 700;
+ }
+
+ .section_content h5 {
+     color: var(--text-color);
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+ }
+
+ .section_content h6 {
+     color: var(--text-color);
+     font-size: 18px;
+     line-height: 28px;
+     font-weight: 600;
+
+ }
+
+ .section_content a {
+     text-align: center;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ .section_content p {
+     color: var(--p_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+
+ }
+
+ .section_content .p_sm {
+     color: var(--p_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+ }
+
+ .section_content .sec_btn_sm {
+     font-family: var(--primary_font);
+     color: var(--text-color);
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 28px;
+ }
+
+ .section_content .sec_btn_lg {
+     font-family: var(--primary_font);
+     color: var(--white_color);
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 30px;
+ }
+
+
+ .section_content .sec_btn_lg i,
+ .section_content .sec_btn_sm i {
+     height: 10px;
+     width: 17px;
+     line-height: 10px;
+ }
+
+ .section_content p {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+ }
+
+ .icon_box_24 i {
+     text-align: center;
+     font-size: 20px;
+     width: 24px;
+     height: 24px;
+     line-height: 24px;
+     background-color: var(--white_color);
+     margin: 0 5px;
+ }
+
+ .icon_box_36 i {
+     text-align: center;
+     width: 36px;
+     height: 36px;
+     line-height: 36px;
+     font-size: 20px;
+ }
+
+ .section_content .bg_hover_light:hover,
+ .section_content .btn_hover_light:hover {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ .section_content .bg_white {
+     background-color: var(--white_color);
+ }
+
+ .section_content .bg_light {
+     color: var(--primary_color_orange_light);
+ }
+
+
+ /* =========Start Product_box CSS Style ========= */
+
+ .section_content .product_img_box {
+     position: relative;
+ }
+
+ .section_content .product_img_box img.hidden_img {
+     position: absolute;
+     inset: 0;
+     z-index: 4;
+     transition: 0.4s ease;
+ }
+
+ .section_content .product_img_box:hover img.hidden_img {
+     opacity: 0;
+     visibility: hidden;
+     transform: scale(0.1);
+ }
+
+ .product_img_box .icon_box_36 {
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     z-index: 5;
+ }
+
+ .product_img_box .icon_box_36 li {
+     position: absolute;
+     right: -20px;
+     transition: 0.3s linear;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .product_img_box .icon_box_36 li:nth-child(1) {
+     top: 20px;
+     transition-delay: 0.1s;
+ }
+
+ .product_img_box .icon_box_36 li:nth-child(2) {
+     top: 60px;
+     transition-delay: 0.2s;
+ }
+
+ .product_img_box .icon_box_36 li:nth-child(3) {
+     top: 100px;
+     transition-delay: 0.3s;
+
+ }
+
+ .product_img_box .icon_box_36 li:nth-child(4) {
+     top: 140px;
+     transition-delay: 0.4s;
+ }
+
+ .product_img_box:hover .icon_box_36 li {
+     right: 20px;
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .section_content .product_img_box .shape_box {
+     position: absolute;
+     top: 10px;
+     left: 24px;
+     width: 67px;
+     height: 24px;
+     text-align: center;
+     color: var(--white_color);
+     z-index: 6;
+     border-radius: 13px 0 0 13px;
+     transform: rotate(270deg);
+     background-color: var(--primary_color_orange_light);
+     transform-origin: bottom;
+ }
+
+ /* ========= End Product_box CSS Style ========= */
+
+
+
+
+
+
+ /* ========= Start Product_box_img_single CSS Style ========= */
+ .section_content .product_box.single {
+     margin: 10px 0;
+ }
+
+ .section_content .product_box.single .product_img_box {
+     margin-bottom: 20px;
+ }
+
+ .section_content .product_box.single .product_img_box img {
+     transform: scale(1);
+     transition: 0.4s;
+ }
+
+ .section_content .product_box.single .product_img_box:hover img {
+     transform: scale(1.2);
+ }
+
+ .section_content .product_box.single .icon_box_36 i {
+     background-color: var(--primary_color_dark);
+     color: var(--white_color);
+     border-radius: 50%;
+ }
+
+ .section_content .product_box.single .icon_box_36 i:hover {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ .section_content .product_box.single .product_img_box .shape_box {
+     border-radius: 0px;
+     transform: rotate(0deg);
+     top: 0;
+     left: 0;
+ }
+
+ .section_content .product_box.single .product_info_box .icon_box_24 i {
+     margin: 0px;
+     color: var(--primary_color_orange_light);
+     font-size: 16px;
+     ;
+ }
+
+ /* ========= Start Product_box_img_single CSS Style ========= */
+
+
+ /* ========= End Product_box_img. CSS Style ========= */
+ .section_content .essential_img_box {
+     margin-right: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     width: 70px;
+     height: 70px;
+     background-color: var(--primary_color_orange_light);
+     border-radius: 50%;
+ }
+
+ .section_content .essential_img_box img {
+     width: 40px;
+     height: 40px;
+ }
+
+ /* ========== Start Slick Arrows  CSS Style ========= */
+ .section_content .arrow_box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .section_content .arrow_left,
+ .section_content .arrow_right {
+     position: absolute;
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+     line-height: 40px;
+     text-align: center;
+     border-radius: 50%;
+     border: 1px solid var(--p_color);
+     transition: 0.7s;
+ }
+
+ .section_content .arrow_left {
+     top: 50%;
+     left: -50px;
+     transform: translateY(-50%);
+ }
+
+ .section_content .arrow_right {
+     top: 50%;
+     right: -50px;
+     transform: translateY(-50%);
+ }
+
+ .section_content .arrow_left:hover,
+ .section_content .arrow_right:hover {
+     background-color: var(--white_color);
+     color: var(--primary_color_orange_light);
+     border-color: transparent;
+ }
+
+ /* ========== End Slick Arrows  CSS Style ========= */
+
+ /* ========== End slick Dots  CSS Style ========= */
+ .section_content .slick-dots {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     bottom: 0%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .section_content .slick-dots li button {
+     padding: 0;
+     border: none;
+     font-size: 0;
+     background-color: none;
+ }
+
+ .section_content .slick-dots li {
+     width: 10px;
+     height: 6px;
+     background-color: #BDBDBD;
+     border-radius: 5px;
+     margin: 0 5px;
+     transition: 0.5s;
+ }
+
+ .section_content .slick-dots li.slick-active {
+     width: 28px;
+     background-color: var(--primary_color_orange_light);
+ }
+
+ /* ========== End slick Dots  CSS Style ========= */
+
+
+
+ /* --=================== End All Section Common CSS Style Here===================-- */
+
+
+
+ /* -- =================== Start Header Section CSS Style Here =================== -- */
+ #header {
+     background-color: var(--white_color);
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+ }
+
+ #header .navbar #main_navbar .navbar-nav a {
+     color: var(--text-color);
+     font-family: var(--primary_font);
+     font-size: 16px;
+     line-height: 26px;
+     font-weight: 400;
+     text-transform: uppercase;
+     padding: 37px 22.5px;
+     transition: 0.4s ease;
+     border: 1px solid transparent;
+ }
+
+ #header .navbar #main_navbar a:hover,
+ #header .navbar #main_navbar a:hover i,
+ #header .navbar #main_navbar a.active {
+     color: var(--primary_color_orange_light);
+
+ }
+
+ #header .navbar ul.ecommerce_cart li a i {
+     color: var(--primary_color_dark);
+     transition: 0.4s ease;
+
+ }
+
+ #header .navbar ul.ecommerce_cart li a {
+     margin: 0 10px;
+ }
+
+ #header .navbar ul.ecommerce_cart li a span {
+     text-align: center;
+     color: var(--white_color);
+     position: absolute;
+     top: 5%;
+     right: 15%;
+     width: 15px;
+     height: 15px;
+     font-size: 14px;
+     line-height: 14px;
+     border-radius: 50%;
+     background-color: var(--primary_color_orange_light);
+     transform: translate(50%);
+
+ }
+
+ /* -- =================== End Header Section CSS Style Here =================== -- */
+
+ /* -- =================== start Page Bannar Section CSS Style Here =================== -- */
+ #page_bannar {
+     position: relative;
+     height: 400px;
+     background-size: cover;
+     background-position: center;
+     z-index: 1;
+ }
+
+ #page_bannar::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background-color: rgba(0, 0, 0, 0.8);
+     z-index: -1;
+ }
+
+
+ #page_bannar .section_content a {
+     color: var(--white_color);
+ }
+
+ #page_bannar .breadcrumb li::before {
+     color: var(--white_color);
+     line-height: 28px;
+ }
+
+ /* -- =================== End Page Bannar Section CSS Style Here =================== -- */
+
+ /* --=======Start Home_page_Bannar section CSS Style Here ======= -- */
+ #home_page_bannar {
+     position: relative;
+ }
+
+ #home_page_bannar .bannar_sliding_box .bannar_sliding_item {
+     height: 800px;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ #home_page_bannar .bannar_sliding_item h1 {
+     color: var(--white_color);
+     padding: 14px 0 16px;
+
+ }
+
+
+ #home_page_bannar .bannar_sliding_item p {
+     color: var(--white_color);
+     padding-bottom: 29px;
+ }
+
+ #home_page_bannar .bannar_sliding_item:nth-child(3) h1,
+ #home_page_bannar .bannar_sliding_item:nth-child(3) h6,
+ #home_page_bannar .bannar_sliding_item:nth-child(3) p {
+     color: var(--h1_color) !important;
+ }
+
+ #home_page_bannar .bannar_sliding_item a {
+     padding: 13px 37px;
+     background-color: var(--primary_color_orange_light);
+     transition: 0.5s ease;
+ }
+
+ #home_page_bannar .bannar_sliding_item a:hover {
+     background-color: var(--white_color);
+     color: var(--primary_color_orange_light);
+ }
+
+ #home_page_bannar .arrow_box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ #home_page_bannar .arrow_box .arrow_left {
+     position: absolute;
+     top: 0;
+     left: -50px;
+ }
+
+ #home_page_bannar .dot_items {
+     position: absolute;
+     bottom: 180px;
+     left: 50px;
+ }
+
+ /* --======= End Home_page_Bannar section CSS Style Here ======= -- */
+
+
+ /* --======= Start Home_page_Mini_Bannar section CSS Style Here ======= -- */
+ #home_page_mini_bannar {
+     padding: 100px 0;
+ }
+
+ #home_page_mini_bannar .mini_bannar_item {
+     position: relative;
+ }
+
+ #home_page_mini_bannar .mini_bannar_left .mini_bannar_item:first-child {
+     margin-bottom: 20px;
+ }
+
+ #home_page_mini_bannar .home_page_mini_bannar .overlay {
+     position: absolute;
+     inset: 20px 30px;
+     background-color: rgba(17, 22, 30, 0.4);
+     transform: scale(0);
+     transition: 0.5s linear;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ #home_page_mini_bannar .home_page_mini_bannar .mini_bannar_item:hover .overlay {
+     transform: scale(1);
+     opacity: 1;
+     visibility: visible;
+     z-index: 2;
+ }
+
+ #home_page_mini_bannar .mini_bannar_item .overlay_info_box {
+     position: absolute;
+     left: 50%;
+     bottom: 10%;
+     transform: translate(-50%, 50%);
+     transition: 0.5s;
+     opacity: 0;
+     visibility: hidden;
+     z-index: 3;
+ }
+
+ #home_page_mini_bannar .mini_bannar_item:hover .overlay_info_box {
+     opacity: 1;
+     visibility: visible;
+     bottom: 50%;
+ }
+
+ #home_page_mini_bannar .home_page_mini_bannar .overlay_info_box h4 {
+     font-size: 30px;
+     line-height: 40px;
+     text-align: center;
+     text-transform: capitalize;
+     color: var(--white_color);
+     margin-bottom: 12px;
+ }
+
+ #home_page_mini_bannar .home_page_mini_bannar .overlay_info_box a {
+     color: var(--white_color);
+     transition: 0.4s ease;
+ }
+
+ #home_page_mini_bannar .home_page_mini_bannar .overlay_info_box a:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* --======= End Home_page_Mini_Bannar section CSS Style Here ======= -- */
+
+
+
+ /* --======= Start Home_page_Arrival Section  CSS Style Here ======= -- */
+ #home_page_arrival_product {
+     position: relative;
+ }
+
+ #home_page_arrival_product .section_content h3 {
+     padding-bottom: 36px;
+ }
+
+ #home_page_arrival_product .product_img_box .icon_box_36 i {
+     color: var(--primary_color_dark);
+     background-color: var(--white_color);
+     border-radius: 50%;
+ }
+
+
+ #home_page_arrival_product .product_img_box .icon_box_36 a:hover i {
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+ }
+
+
+
+ #home_page_arrival_product .product_img_box .shape_box p {
+     color: var(--white_color);
+ }
+
+ #home_page_arrival_product .product_info_box {
+     padding: 24px 0 26px;
+ }
+
+ #home_page_arrival_product .product_info_box p i {
+     color: var(--primary_color_orange_light);
+ }
+
+ #home_page_arrival_product .product_info_box h6 {
+     padding: 5px 0 11px;
+ }
+
+ #home_page_arrival_product .section_content .sec_btn_lg {
+     padding: 13px 27px;
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+ }
+
+
+ /* --======= End Home_page_Arrival Section  CSS Style Here ======= -- */
+
+
+ /* --======= Start Home_page_Offer Section  CSS Style Here ======= -- */
+ #home_page_offer {
+     margin: 100px 0;
+     position: relative;
+     height: 524px;
+     background-size: cover !important;
+     background-position: center !important;
+ }
+
+ #home_page_offer::after {
+     position: absolute;
+     content: "";
+     inset: 0;
+     background-color: rgba(255, 255, 255, 0.1);
+     z-index: 7;
+     transition: 0s;
+     transform: scaleX(0) scaleY(0) rotate(80deg) skew(45deg);
+
+     transform-origin: center;
+ }
+
+ #home_page_offer:hover::after {
+     transform: scaleX(5) scaleY(1);
+     transition: 0.5s all ease-in-out;
+     transition-duration: 1s;
+     opacity: 0;
+
+ }
+
+
+ #home_page_offer .section_content p {
+     text-align: center;
+     color: var(--white_color);
+     padding: 10px 0 30px;
+ }
+
+ #home_page_offer .section_content .sec_btn_lg {
+     padding: 13px 34px;
+     background-color: transparent;
+     border: 1px solid var(--white_color);
+     color: var(--white_color);
+ }
+
+ #home_page_offer .section_content a:hover {
+     background-color: var(--primary_color_orange_light);
+     border-color: transparent;
+ }
+
+ /* --======= End Home_page_Offer Section  CSS Style Here ======= -- */
+
+
+
+ /* --======= End Home_page_Best_seller Section CSS Style Here ======= -- */
+ #home_page_best_seller {
+     position: relative;
+ }
+
+ #home_page_best_seller .section_content h3 {
+     padding-bottom: 32px;
+ }
+
+ #home_page_best_seller .product_img_box .icon_box_36 i {
+     color: var(--primary_color_dark);
+     background-color: var(--white_color);
+     border-radius: 50%;
+ }
+
+
+ #home_page_best_seller .product_img_box .icon_box_36 a:hover i {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #home_page_best_seller .product_img_box .shape_box p {
+     color: var(--white_color);
+ }
+
+ #home_page_best_seller .product_info_box {
+     padding: 24px 0 26px;
+ }
+
+ #home_page_best_seller .product_info_box h6 {
+     padding: 5px 0 11px;
+ }
+
+ #home_page_best_seller .section_content .sec_btn_lg {
+     padding: 13px 27px;
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+ }
+
+ #home_page_best_seller .section_content p.icon_box_24 i {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* --======= End Home_page_Best_seller Section CSS Style Here ======= -- */
+
+
+ /* --======= Start Home_page_Deal_Offer Section CSS Style Here ======= -- */
+ #home_page_deals_offer {
+     position: relative;
+     margin: 100px 0
+ }
+
+ #home_page_deals_offer .deals_offer_sliding_box {
+     padding: 82px 40px 60px;
+     background-color: var(--white_color);
+ }
+
+ #home_page_deals_offer .deals_sliding_item {
+     position: relative;
+     padding: 12px 0;
+ }
+
+ #home_page_deals_offer .deals_sliding_item::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     transform: scaleY(0%);
+     background-color: rgba(255, 255, 255, 0.4);
+     transition: 0s linear;
+ }
+
+ #home_page_deals_offer .deals_sliding_item:hover::before {
+     content: "";
+     transition: 0.5s all ease-in-out;
+     transition-duration: 1s;
+     transform: scaleY(100%);
+     opacity: 0;
+ }
+
+ #home_page_deals_offer .deals_sliding_item::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     transform: scaleX(0%);
+     background-color: rgba(255, 255, 255, 0.4);
+     transition: 0s linear;
+
+ }
+
+ #home_page_deals_offer .deals_sliding_item:hover::after {
+     content: "";
+     transition: 0.4s all ease-in-out;
+     transition-duration: 1s;
+     transform: scaleX(100%);
+     opacity: 0;
+ }
+
+ #home_page_deals_offer .section_content .time_box {
+     position: absolute;
+     left: 50%;
+     top: 77px;
+     transform: translate(-50%);
+
+ }
+
+ #home_page_deals_offer .section_content .time_box .time_box_content {
+     height: 70px;
+     width: 100%;
+     background-color: var();
+     border-radius: 40px;
+     border: 1px solid var(--primary_color_orange_light);
+ }
+
+ #home_page_deals_offer .deals_sliding_item_box {
+     padding: 50px;
+     background-size: cover;
+     background-position: center;
+     margin: 12px;
+ }
+
+ #home_page_deals_offer .section_content>h3 {
+     padding-bottom: 78px;
+     color: var(--text-color);
+ }
+
+ #home_page_deals_offer .section_content h6 {
+     color: var(--text-color);
+     padding-bottom: 10px;
+ }
+
+ #home_page_deals_offer .section_content p.p_pad {
+     padding: 16px 0 19px;
+     color: var(--p_color);
+ }
+
+ #home_page_deals_offer .deals_sliding_item .sec_btn_sm {
+     color: var(--white_color);
+     background-color: var(--primary_color_dark);
+     padding: 13px 27px;
+     margin-top: 30px;
+ }
+
+ #home_page_deals_offer .section_content .slick-dots {
+     bottom: 40px;
+ }
+
+ /* --======= End Home_page_Deal_Offer Section CSS Style Here ======= -- */
+
+ /* --======= Start Home_page_Special_Offer Section Here ======= -- */
+ #home_page_spacial_offer {
+     background-color: #F1F3F4;
+ }
+
+ #home_page_spacial_offer .img_video_link_box {
+     height: 517px;
+     background-size: 50%;
+     background-position: center right;
+     background-repeat: no-repeat;
+ }
+
+ #home_page_spacial_offer .section_content h6 {
+     padding-bottom: 10px;
+     color: var(--p_color)
+ }
+
+ #home_page_spacial_offer .section_content h3 {
+     color: var(--text-color)
+ }
+
+ #home_page_spacial_offer .section_content p {
+     color: var(--p_color);
+     padding: 16px 0 30px;
+ }
+
+ #home_page_spacial_offer .section_content .sec_btn_lg {
+     background-color: var(--primary_color_orange_light);
+     padding: 14px 23px;
+     background-image: url(../images/btn_bg.png);
+     background-position: right top;
+     background-repeat: no-repeat;
+     transition: 1s;
+ }
+
+ #home_page_spacial_offer .section_content .sec_btn_lg:hover {
+     background-position: left bottom;
+ }
+
+ #home_page_spacial_offer .bg_info {
+     position: relative;
+     width: 200px;
+     height: 200px;
+     background-color: transparent;
+ }
+
+ #home_page_spacial_offer .section_content .sec_btn_round {
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: transparent;
+ }
+
+ #home_page_spacial_offer .section_content .sec_btn_round i {
+     color: var(--primary_color_orange_light);
+     text-align: center;
+     line-height: 40px;
+     width: 40px;
+     height: 40px;
+     font-size: 30px;
+     background-color: var(--white_color);
+     border-radius: 50%;
+     animation: move 1s infinite ease-in-out;
+     box-shadow: 0 0 1rem #FFFFFF;
+ }
+
+ @keyframes move {
+     0% {
+         box-shadow: 0 0 5rem rgba(255, 255, 255, 1);
+         transition: 3s;
+     }
+
+     10% {
+         box-shadow: 0 0 7rem rgba(255, 255, 255, 0.9);
+         transition: 2.7s;
+     }
+
+     20% {
+         box-shadow: 0 0 9rem rgba(255, 255, 255, 0.8);
+         transition: 2.4s;
+     }
+
+     30% {
+         box-shadow: 0 0 11rem rgba(255, 255, 255, 0.7);
+         transition: 2.1s;
+     }
+
+     40% {
+         box-shadow: 0 0 10rem rgba(255, 255, 255, 0.6);
+         transition: 1.8s;
+     }
+
+     50% {
+         box-shadow: 0 0 10.5rem rgba(255, 255, 255, 0.5);
+         transition: 1.5s;
+     }
+
+     60% {
+         box-shadow: 0 0 10.3rem rgba(255, 255, 255, 0.4);
+         transition: 1.2s;
+     }
+
+     70% {
+         box-shadow: 0 0 11rem rgba(255, 255, 255, 0.3);
+         transition: 0.9s;
+     }
+
+     80% {
+         box-shadow: 0 0 11.2rem rgba(255, 255, 255, 0.2);
+         transition: 0.6s;
+     }
+
+     90% {
+         box-shadow: 0 0 11.1rem rgba(255, 255, 255, 0.1);
+         transition: 0.3s;
+     }
+
+     100% {
+         box-shadow: 0 0 11.2rem rgba(255, 255, 255, 0.1);
+         transition: 0.1s;
+     }
+ }
+
+ /* --======= End Home_page_Special_Offer Section Here ======= -- */
+
+
+ /* -- ======= End Home_page_Latest News Section Here ======= -- */
+ #home_page_latest {
+     padding: 115px 0 100px;
+ }
+
+ #home_page_latest .section_content .latest_box {
+     margin-bottom: 30px 0;
+     padding: 30px 0;
+     position: relative;
+ }
+
+ #home_page_latest .latest_item {
+     padding: 35px;
+ }
+
+
+
+
+ #home_page_latest .latest_item .img_box {
+     margin-bottom: 35px;
+     position: relative;
+ }
+
+ #home_page_latest .latest_item .img_box::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     transform: scaleX(0);
+     transition: 0s linear;
+     background-color: rgba(255, 255, 255, 0.4);
+     ;
+     transform-origin: center;
+ }
+
+ #home_page_latest .latest_item .img_box::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     transform: scaleY(0);
+     transition: 0s linear;
+     background-color: rgba(255, 255, 255, 0.4);
+     ;
+     transform-origin: center;
+ }
+
+ #home_page_latest .latest_item .img_box:hover::after {
+     transform: scaleX(1);
+     transition: 0.5s all ease-in-out;
+     opacity: 0;
+ }
+
+ #home_page_latest .latest_item .img_box:hover::before {
+     transform: scaleY(1);
+     transition: 0.5s all ease-in-out;
+     opacity: 0;
+ }
+
+
+ #home_page_latest .latest_item>p {
+     padding: 11px 0 37px;
+ }
+
+ #home_page_latest .latest_item .anchor_p_box {
+     padding: 27px 0;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+ }
+
+ #home_page_latest .latest_item .latest_box {
+     padding: 36px 0 40px;
+ }
+
+ #home_page_latest .latest_item h5:hover,
+ #home_page_latest .latest_item .anchor_p_box a:hover,
+ #home_page_latest .latest_item .anchor_p_box p:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* -- ======= End Home_page_Latest News Section Here ======= -- */
+
+
+ /* -- ======= Start Home_page_essential Section Here ======= -- */
+ #home_page_essential {
+     margin-top: 100px;
+ }
+
+ #home_page_essential .section_content {
+     position: absolute;
+     padding: 45px 38px;
+     background-color: var(--white_color);
+     box-shadow: rgba(21, 26, 50, 0.10);
+     left: 0;
+     bottom: 0;
+     transform: translateY(50%);
+     z-index: 10;
+
+ }
+
+ /* -- ======= End Home_page_essential Section Here ======= -- */
+
+
+
+
+ /* -- ======= Start Home_page_story Section CSS Style Here ======= -- */
+ #_page_stroy .section_content .sec_btn_round i {
+     color: var(--primary_color_orange_light);
+     text-align: center;
+     line-height: 40px;
+     width: 40px;
+     height: 40px;
+     font-size: 30px;
+     background-color: var(--white_color);
+     border-radius: 50%;
+     animation: move 1s infinite ease-in-out;
+     box-shadow: 0 0 1rem #FFFFFF;
+ }
+
+ @keyframes move {
+     0% {
+         box-shadow: 0 0 5rem rgba(255, 255, 255, 1);
+         transition: 3s;
+     }
+
+     10% {
+         box-shadow: 0 0 7rem rgba(255, 255, 255, 0.9);
+         transition: 2.7s;
+     }
+
+     20% {
+         box-shadow: 0 0 9rem rgba(255, 255, 255, 0.8);
+         transition: 2.4s;
+     }
+
+     30% {
+         box-shadow: 0 0 11rem rgba(255, 255, 255, 0.7);
+         transition: 2.1s;
+     }
+
+     40% {
+         box-shadow: 0 0 10rem rgba(255, 255, 255, 0.6);
+         transition: 1.8s;
+     }
+
+     50% {
+         box-shadow: 0 0 10.5rem rgba(255, 255, 255, 0.5);
+         transition: 1.5s;
+     }
+
+     60% {
+         box-shadow: 0 0 10.3rem rgba(255, 255, 255, 0.4);
+         transition: 1.2s;
+     }
+
+     70% {
+         box-shadow: 0 0 11rem rgba(255, 255, 255, 0.3);
+         transition: 0.9s;
+     }
+
+     80% {
+         box-shadow: 0 0 11.2rem rgba(255, 255, 255, 0.2);
+         transition: 0.6s;
+     }
+
+     90% {
+         box-shadow: 0 0 11.1rem rgba(255, 255, 255, 0.1);
+         transition: 0.3s;
+     }
+
+     100% {
+         box-shadow: 0 0 11.2rem rgba(255, 255, 255, 0.1);
+         transition: 0.1s;
+     }
+ }
+
+ /* -- ======= End Home_page_essential Section Here ======= -- */
+
+ /* -- ======= Start Home_page_footer Section Here ======= -- */
+ #footer.home_page_footer {
+     padding-top: 80px;
+ }
+
+ /* -- ======= End Home_page_footer Section Here ======= -- */
+
+ /* --============================= End Home Page  CSS Style Here ============================= -- */
+
+
+
+
+
+
+ /* --============================= Start About Page CSS Style Here ============================= -- */
+
+
+ /* -- ========= Start About_page_aytor_shop CSS Style Here ========= -- */
+ #about_page_aytor_shop {
+     padding: 100px 0;
+ }
+
+ #about_page_aytor_shop .section_content {
+     position: relative;
+     padding: 40px 0;
+ }
+
+ #about_page_aytor_shop .img_slide_back {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: -1;
+     transition: 1s;
+     animation: move_about_aytor_shop 2.5s alternate infinite;
+ }
+
+ #about_page_aytor_shop .learn_aytor_shop_item {
+     padding: 36px 48px;
+ }
+
+ #about_page_aytor_shop .section_content h3 {
+     padding: 0;
+ }
+
+ #about_page_aytor_shop .section_content p {
+     padding: 10px 0;
+ }
+
+ #about_page_aytor_shop .learn_aytor_shop_item hr {
+     margin: 18px 0 19px;
+     height: 1px;
+     width: 100%;
+     background-color: var(--p_color);
+ }
+
+ #about_page_aytor_shop .section_content .sec_btn_sm {
+     margin-top: 37px;
+     padding: 13px 18px;
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+     transition: 0.4s;
+ }
+
+ #about_page_aytor_shop .section_content p i {
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+     border-radius: 50%;
+     width: 16px;
+     height: 16px;
+     line-height: 16.5px;
+     text-align: center;
+     margin-right: 10px;
+ }
+
+ #about_page_aytor_shop .section_content .sec_btn_sm:hover {
+     background-color: black;
+     ;
+ }
+
+ @keyframes move_about_aytor_shop {
+     0% {
+         left: 0px;
+     }
+
+     100% {
+         left: 100px;
+     }
+ }
+
+ /* -- ========= Start About_page_aytor_shop CSS Style Here ========= -- */
+
+
+
+
+
+
+
+
+
+
+ /* -- ======= Start About_page_successive Section CSS Style Here ======= -- */
+ #about_page_successive .successive_item img {
+     padding: 25px 29px;
+     background-color: #F1F3F4;
+     border-radius: 50%;
+     margin-bottom: 20px;
+ }
+
+ #about_page_successive .successive_item h3 {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* -- ======= End About_page_successive Section CSS Style Here ======= -- */
+
+ /* -- ======= End About_page_Story Section CSS Style Here ======= -- */
+ #about_page_stroy {
+     background-position: center right;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     margin: 100px 0;
+ }
+
+ #about_page_stroy .section_content .story_item {
+     padding: 103px 0;
+ }
+
+ #about_page_stroy .section_content .story_item .p_pad {
+     padding: 14px 0 10px;
+ }
+
+ /* -- ======= End About_page_Story Section CSS Style Here ======= -- */
+
+ /* -- ======= Start About_page_essential Section CSS Style Here ======= -- */
+ #about_page_essential .section_content {
+     padding: 45px 38px;
+     background-color: var(--white_color);
+     box-shadow: rgba(21, 26, 50, 0.10);
+
+ }
+
+ /* -- ======= End About_page_essential Section CSS Style Here ======= -- */
+ /* -- ======= Start About_page_LeaderShip Section CSS Style Here ======= -- */
+ #about_page_leadership {
+     padding: 100px 0 78px;
+ }
+
+ #about_page_leadership .leadership_item {
+     padding: 12px;
+ }
+
+ #about_page_leadership .section_content h3 {
+     padding-bottom: 24px;
+ }
+
+ #about_page_leadership .leadership_item .img_box {
+     margin-bottom: 16px;
+     overflow: hidden;
+ }
+
+ #about_page_leadership .leadership_item .img_box img {
+     width: 100%;
+     height: 100%;
+     transform: scale(1);
+     transition: 0.4s;
+ }
+
+ #about_page_leadership .leadership_item .img_box:hover img {
+     transform: scale(1.1);
+ }
+
+ #about_page_leadership .leadership_item .icon_box_24 i:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+
+
+
+ #about_page_leadership .leadership_item p span {
+     color: var(--primary_color_orange_light);
+     padding: 5px 0;
+ }
+
+ /* -- ======= End About_page_LeaderShip Section CSS Style Here ======= -- */
+
+
+
+ /* -- ======= End About_page_profile Section CSS Style Here ======= -- */
+ #about_page_profile .section_content i {
+     font-size: 40px;
+     width: 40px;
+     height: 40px;
+     margin: auto;
+     color: #979797;
+ }
+
+ .profile_sliding_box {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin: auto;
+     margin: 25px auto 20px;
+ }
+
+ #about_page_profile .profile_sliding_box img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+ }
+
+ #about_page_profile .section_content .append_dot_box {
+     position: relative;
+     ;
+     margin: auto;
+     width: 200px;
+     height: 15px;
+     background-color: var(--white_color);
+ }
+
+ #about_page_profile .profile_sliding_box .slick-dots {
+     bottom: 20px;
+     position: absolute;
+ }
+
+ #about_page_profile .section_content h4 {
+     color: var(--black_color);
+     padding-top: 10px;
+ }
+
+ #about_page_profile .section_content p span {
+     color: var(--primary_color_orange_light);
+ }
+
+ #about_page_profile .section_content .animation_item_30 {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+ }
+
+ #about_page_profile .section_content .animation_item_50 {
+     width: 50px;
+     height: 50px;
+ }
+
+ #about_page_profile .section_content .animation_item_40 {
+     width: 40px;
+     height: 40px;
+ }
+
+ #about_page_profile .section_content .animation_item_70 {
+     width: 70px;
+     height: 70px;
+ }
+
+ #about_page_profile .section_content .img_animation {
+     position: absolute;
+     border-radius: 50%;
+     overflow: hidden;
+     cursor: pointer;
+ }
+
+
+ #about_page_profile .section_content .animation_1 {
+     bottom: 0%;
+     right: 0%;
+     animation: move_1 9s infinite;
+
+ }
+
+ #about_page_profile .section_content .animation_2 {
+     top: 20%;
+     left: 0;
+     -webkit-animation-delay: 3s;
+     animation-delay: 3s;
+     animation: move_2 10s infinite;
+ }
+
+ #about_page_profile .section_content .animation_3 {
+     bottom: 20%;
+     left: 15%;
+     -webkit-animation-delay: 5s;
+     animation-delay: 5s;
+     animation: move_3 11s infinite;
+ }
+
+ #about_page_profile .section_content .animation_4 {
+     bottom: 0;
+     left: 0;
+     -webkit-animation-delay: 7s;
+     animation-delay: 7s;
+     animation: move_4 12s infinite;
+ }
+
+ #about_page_profile .section_content .animation_5 {
+     top: 0;
+     right: 20%;
+     -webkit-animation-delay: 3s;
+     animation-delay: 3s;
+     animation: move_5 11s infinite;
+ }
+
+ #about_page_profile .section_content .animation_6 {
+     top: 20%;
+     right: 0;
+     -webkit-animation-delay: 6s;
+     animation-delay: 6s;
+     animation: move_6 9s infinite;
+ }
+
+ #about_page_profile .section_content .animation_7 {
+     bottom: 20%;
+     right: 15%;
+     -webkit-animation-delay: 7s;
+     animation-delay: 7s;
+     animation: move_7 9s infinite;
+ }
+
+ #about_page_profile .section_content .animation_8 {
+     top: 0;
+     left: 20%;
+     animation: move_8 11s infinite;
+ }
+
+ @keyframes move_1 {
+     0% {
+         right: 0;
+         bottom: 0;
+         transition: 0.5s;
+     }
+
+     25% {
+         right: 10%;
+         bottom: 0;
+         transition: 0.5s;
+     }
+
+     50% {
+         right: 10%;
+         bottom: 20%;
+         transition: 0.5s;
+     }
+
+     75% {
+         right: 0;
+         bottom: 20%;
+         transition: 0.5s;
+     }
+
+     100% {
+         right: 0;
+         bottom: 0;
+         transition: 0.5s;
+     }
+ }
+
+
+ @keyframes move_2 {
+     0% {
+         left: 0;
+         top: 5%;
+         transition: 0.5s;
+     }
+
+     25% {
+         left: 10%;
+         top: 5%;
+         transition: 0.5s;
+     }
+
+     50% {
+         left: 10%;
+         top: 20%;
+         transition: 0.5s;
+     }
+
+     75% {
+         left: 0;
+         top: 20%;
+         transition: 0.5s;
+     }
+
+     100% {
+         left: 0;
+         top: 5%;
+         transition: 0.5s;
+     }
+ }
+
+ @keyframes move_3 {
+     0% {
+         left: 20%;
+         bottom: 0;
+         transition: 0.5s;
+     }
+
+     25% {
+         left: 20%;
+         bottom: 20%;
+         transition: 0.5s;
+     }
+
+     50% {
+         left: 25%;
+         bottom: 20%;
+         transition: 0.5s;
+     }
+
+     75% {
+         left: 25%;
+         bottom: 0;
+         transition: 0.5s;
+     }
+
+     100% {
+         left: 20%;
+         bottom: 0;
+         transition: 0.5s;
+     }
+ }
+
+
+ @keyframes move_4 {
+     0% {
+         left: 0;
+         top: 45%;
+         transition: 0.5s;
+     }
+
+     25% {
+         left: 0px;
+         top: 65%;
+         transition: 0.5s;
+     }
+
+     50% {
+         left: 10%;
+         top: 65%;
+         transition: 0.5s;
+     }
+
+     75% {
+         left: 10%;
+         top: 45%;
+         transition: 0.5s;
+     }
+
+     100% {
+         left: 0;
+         top: 45%;
+         transition: 0.5s;
+     }
+ }
+
+ @keyframes move_5 {
+     0% {
+         right: 20%;
+         top: 0px;
+         transition: 0.5s;
+     }
+
+     25% {
+         right: 20%;
+         top: 20%;
+         transition: 0.5s;
+     }
+
+     50% {
+         right: 30%;
+         top: 20%;
+         transition: 0.5s;
+     }
+
+     75% {
+         right: 30%;
+         top: 0px;
+         transition: 0.5s;
+     }
+
+     100% {
+         right: 20%;
+         top: 0px;
+         transition: 0.5s;
+     }
+ }
+
+
+ @keyframes move_6 {
+     0% {
+         right: 0;
+         top: 30%;
+         transition: 0.5s;
+     }
+
+     25% {
+         right: 0;
+         top: 55%;
+         transition: 0.5s;
+     }
+
+     50% {
+         right: 10%;
+         top: 55%;
+         transition: 0.5s;
+     }
+
+     75% {
+         right: 10%;
+         top: 30%;
+         transition: 0.5s;
+     }
+
+     100% {
+         right: 0;
+         top: 30%;
+         transition: 0.5s;
+     }
+ }
+
+
+
+ @keyframes move_7 {
+     0% {
+         right: 10%;
+         top: 60%;
+         transition: 0.5s;
+     }
+
+     25% {
+         right: 10%;
+         top: 75%;
+         transition: 0.5s;
+     }
+
+     50% {
+         right: 20%;
+         top: 75%;
+         transition: 0.5s;
+     }
+
+     75% {
+         right: 20%;
+         top: 60%;
+         transition: 0.5s;
+     }
+
+     100% {
+         right: 10%;
+         top: 60%;
+         transition: 0.5s;
+     }
+ }
+
+ @keyframes move_8 {
+     0% {
+         left: 20%;
+         top: 10%;
+         transition: 0.5s;
+     }
+
+     25% {
+         left: 20%;
+         top: 25%;
+         transition: 0.5s;
+     }
+
+     50% {
+         left: 25%;
+         top: 25%;
+         transition: 0.5s;
+     }
+
+     75% {
+         left: 25%;
+         top: 10%;
+         transition: 0.5s;
+     }
+
+     100% {
+         left: 20%;
+         top: 10%;
+         transition: 0.5s;
+     }
+ }
+
+ /* -- ======= End About_page_profile Section CSS Style Here ======= -- */
+
+
+
+
+
+ /* -- ======= End About_page_aytor_instagram Section CSS Style Here ======= -- */
+ #about_page_aytor_instagram {
+     margin: 100px 0;
+ }
+
+ #about_page_aytor_instagram .aytor_instagram_sliding {
+     padding: 26px 0 45px;
+ }
+
+ #about_page_aytor_instagram .aytor_instagram_item {
+     position: relative;
+     overflow: hidden;
+     padding: 0;
+     margin: 12px;
+
+ }
+
+ #about_page_aytor_instagram .aytor_instagram_item img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ #about_page_aytor_instagram .section_content .insta_icon_box {
+     text-align: center;
+     position: absolute;
+     inset: 0;
+     background-color: rgba(21, 26, 50, 0.6);
+     transition: 0.5s ease;
+     opacity: 0;
+     visibility: hidden;
+     transform: scale(0);
+ }
+
+ #about_page_aytor_instagram .section_content .insta_icon_box i {
+     width: 40px;
+     height: 40px;
+     font-size: 40px;
+     color: var(--white_color);
+     transition: 0.5s ease;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ #about_page_aytor_instagram .section_content .insta_icon_box i:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ #about_page_aytor_instagram .aytor_instagram_item:hover .insta_icon_box {
+     opacity: 1;
+     visibility: visible;
+     transform: scale(1);
+ }
+
+ #about_page_aytor_instagram .aytor_instagram_item:hover .insta_icon_box i {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ /* -- ======= End About_page_aytor_instagram Section CSS Style Here ======= -- */
+
+
+ /* -- ======= Start About_page_NewsLetter Section CSS Style Here ======= -- */
+ #about_page_newslatter {
+     background-color: #F1F3F4;
+     padding: 100px 0 70px;
+ }
+
+ #about_page_newslatter .section_content .newslatter_item:first-child {
+     padding-right: 134px;
+ }
+
+ #about_page_newslatter .section_content h2 {
+     padding-bottom: 6px;
+ }
+
+ #about_page_newslatter .form_box {
+     background-color: var(--white_color);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+ }
+
+ #about_page_newslatter .form_box .sec_btn_lg {
+     background-color: var(--primary_color_orange_light);
+     padding: 15px 50px;
+ }
+
+ /* -- ======= End About_page_NewsLetter Section CSS Style Here ======= -- */
+
+
+
+ /* --============================= End About Page CSS Style Here ============================= -- */
+
+
+
+
+
+
+
+
+ /* --============================= Start Shop Page All CSS Style Here ============================= -- */
+
+ /* -- ======= Start Shop Product Section CSS Style Here ======= -- */
+ #shop_page_product {
+     padding: 100px 0;
+ }
+
+ #shop_page_product .shopping_headbar_item i {
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     font-size: 30px;
+     line-height: 40px;
+     background-color: var(--primary_color_dark);
+     color: var(--white_color);
+ }
+
+ #shop_page_product .shopping_headbar_item i.menu_line.show,
+ #shop_page_product .shopping_headbar_item i.menu_grid.show {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #shop_page_product .shopping_headbar_item select,
+ #shop_page_product .shopping_headbar_item option {
+     padding: 10px 16px;
+     line-height: 28px;
+     background-color: #F1F3F4;
+ }
+
+ #shop_page_product .shopping_box {
+     padding: 30px 0 45px;
+ }
+
+ #shop_page_product .product_info_box .icon_box_24 i {
+     margin: 3px;
+     width: 10px;
+     height: 10px;
+     line-height: 10px;
+     font-size: 16px;
+     color: var(--primary_color_orange_light);
+ }
+
+ #shop_page_product .shop_page_menu_line,
+ #shop_page_product .shop_page_menu_grid {
+     opacity: 0;
+     display: none;
+     visibility: hidden;
+ }
+
+ #shop_page_product .shop_page_menu_grid.show,
+ #shop_page_product .shop_page_menu_line.show {
+     opacity: 1;
+     display: block;
+     visibility: visible;
+ }
+
+ #shop_page_product .shop_page_menu_grid .product_info_box p:nth-child(1),
+ #shop_page_product .shop_page_menu_grid .product_info_box p:nth-child(2) {
+     color: var(--primary_color_orange_light);
+ }
+
+ #shop_page_product .shop_page_menu_grid .product_info_box p:nth-child(4) {
+     padding: 20px 0;
+ }
+
+ #shop_page_product .shop_page_menu_grid .grid_item {
+     margin: 20px 0;
+     padding: 30px;
+ }
+
+ #shop_page_product .shop_page_menu_grid .icon_box_36 i {
+     background-color: var(--primary_color_dark);
+     color: var(--white_color);
+     border-radius: 50%;
+     margin: 0 5px;
+ }
+
+ #shop_page_product .shop_page_menu_grid h6 {
+     padding-bottom: 15px;
+ }
+
+ #shop_page_product .shop_page_menu_grid .icon_box_36 i:hover {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #shop_page_product .pagination li,
+ #shop_page_product .pagination a {
+     color: var(--primary_color_dark);
+ }
+
+ #shop_page_product .pagination a.page_active {
+     background-color: var(--primary_color_dark);
+     color: var(--white_color);
+ }
+
+ /* -- ======= End Shop Product Section CSS Style Here ======= -- */
+ /* --============================= End Shop Page All CSS Style Here ============================= -- */
+
+
+
+ /* --============================= Start Shop_details Page All CSS Style Here ============================= -- */
+
+
+ /* -- ======= Start Shop_details Product Section CSS Style Here ======= -- */
+ #shop_details_page {
+     padding: 100px 0;
+ }
+
+ #shop_details_page .section_content .shop_details_item .top_part {
+     padding-bottom: 30px;
+     border-bottom: 1px solid hsl(0, 2%, 54%, 0.5);
+ }
+
+ #shop_details_page .section_content .shop_details_item .top_part h3 {
+     padding-bottom: 5px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .top_part .icon_box_24 i {
+     color: var(--primary_color_orange_light);
+     margin: 0;
+ }
+
+ #shop_details_page .section_content .shop_details_item .top_part .icon_box_24 {
+     padding: 0 15px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .top_part p:nth-child(3) {
+     padding: 15px 0 20px;
+     color: var(--text-color);
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part label {
+     font-size: 24px;
+     padding-bottom: 15px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part .sec_btn_lg {
+     background-color: var(--primary_color_orange_light);
+     padding: 0 45px;
+     height: 50px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part button,
+ #shop_details_page .section_content .shop_details_item .middle_part input {
+     border: transparent;
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part .icon_50 {
+     width: 50px;
+     height: 50px;
+     ;
+     line-height: 50px;
+     font-size: 25px;
+     background-color: #f1f1f1;
+     border: 1px solid #c9c4c4;
+     padding: 0;
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part {
+     padding: 30px 0 30px;
+     border-bottom: 1px solid hsla(0, 0%, 70%, 0.5);
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part .bg_dark {
+     background-color: var(--primary_color_dark);
+     margin: 0 5px;
+     color: var(--white_color);
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part .Quantity {
+     margin: 0 10px;
+     background-color: var(--bg_color_dark);
+     color: var(--white_color);
+ }
+
+ #shop_details_page .section_content .shop_details_item .middle_part .bg_light_white {
+     background-color: #f1f1f1;
+ }
+
+ #shop_details_page .section_content .shop_details_item .bottom_part {
+     padding-top: 30px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .bottom_part th {
+     padding-right: 15px;
+ }
+
+ #shop_details_page .section_content .shop_details_item .bottom_part .icon_box_24 i {
+     color: #828282;
+ }
+
+ #shop_details_page .section_content .shop_details_item .bottom_part .icon_box_24 i:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* -- ======= End Shop_details Product Section CSS Style Here ======= -- */
+
+
+
+ /* -- ======= Start Shop_Overview Product Section CSS Style Here ======= -- */
+ #shop_details_overview .overview_top_item {
+     padding: 13px 0;
+ }
+
+ #shop_details_overview .overview_top_item .overview_inner_item {
+     padding: 15px 55px;
+     background-color: var(--text-color);
+     color: var(--white_color);
+     cursor: pointer;
+ }
+
+ #shop_details_overview .overview_top_item .overview_inner_item.show {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #shop_details_overview .section_content .product_description_box {
+     display: none;
+     visibility: hidden;
+     opacity: 0;
+ }
+
+ #shop_details_overview .section_content .product_description_box.show {
+     display: block;
+     visibility: visible;
+     opacity: 1;
+     ;
+ }
+
+ #shop_details_overview .section_content .product_description_box p:first-child {
+     padding: 24px 0 18px;
+     color: var(--p_color);
+ }
+
+ #shop_details_overview .customer_review_box {
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ #shop_details_overview .customer_review_box.show {
+     display: block;
+     opacity: 1;
+     visibility: visible;
+ }
+
+ #shop_details_overview .customer_review_box .review_box_item {
+     padding: 40px 0;
+     border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+ }
+
+ #shop_details_overview .section_content .customer_review_box img {
+     border-radius: 50%;
+ }
+
+ #shop_details_overview .customer_review_box .icon_box_24 i {
+     margin: 0px;
+     color: var(--primary_color_orange_light);
+ }
+
+ #shop_details_overview .customer_review_box .review_box_item h4 {
+     color: var(--text-color);
+     padding-right: 10px;
+ }
+
+ #shop_details_overview .customer_review_box .review_box_item .name_date_box {
+     padding-bottom: 15px;
+ }
+
+ #shop_details_overview .customer_review_box .add_review_box {
+     padding: 40px;
+ }
+
+ #shop_details_overview .customer_review_box .add_review_box .form-input_box {
+     padding: 0 12px;
+     background-color: var(--white_color);
+ }
+
+ #shop_details_overview .customer_review_box .add_review_box .sec_btn_lg {
+     background-color: var(--black_color);
+     padding: 17px 21px;
+     margin-top: 18px;
+ }
+
+ #shop_details_overview .customer_review_box .add_review_box .sec_btn_lg:hover {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #shop_details_overview .customer_review_box .add_review_box input,
+ #shop_details_overview .customer_review_box .add_review_box textarea {
+     margin: 12px;
+     background-color: #f1f3f4;
+     outline: 0;
+     resize: none;
+     padding: 20px;
+ }
+
+ #shop_details_overview .additional_information {
+     padding: 42px;
+ }
+
+ #shop_details_overview .additional_information span {
+     padding: 9px 12px;
+     border: 1px solid rgba(163, 162, 162, 0.4)
+ }
+
+ #shop_details_overview .additional_information {
+     display: none;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ #shop_details_overview .additional_information.show {
+     display: block;
+     opacity: 1;
+     visibility: visible;
+ }
+
+ /* -- ===== End Shop_Overview Product Section CSS Style Here ======= -- */
+
+
+
+ /* --======= Start Shop_details_Related_page Section Here ======= -- */
+ #shop_details_related {
+     margin: 87px 0 100px;
+ }
+
+ #shop_details_related .related_item {
+     margin: 12px;
+ }
+
+ #shop_details_related .section_content h3 {
+     padding-bottom: 36px;
+ }
+
+ #shop_details_related .product_box .product_info_box>p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     color: var(--p_color);
+ }
+
+ /* --======= End Shop_details_Related_page Section Here ======= -- */
+
+
+ /* --============================= End Shop_details Page All CSS Style Here ============================= -- */
+
+
+
+ /* --============================= Start Shop_cart_Page All CSS Style Here ============================= -- */
+
+ /* --======= Start Shop_cart_page Section Here ======= -- */
+
+ /* --======= Start Shop_cart_page Section Here ======= -- */
+ #shop_compare_page {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     color: var(--p_color);
+     padding: 100px 0;
+ }
+
+ #shop_compare_page .woocommerce-message {
+     padding: 12px 50px;
+     background-color: rgba(201, 199, 199, 0.3);
+ }
+
+ #shop_compare_page .woocommerce-message::after {
+     content: '';
+     position: absolute;
+     left: 30px;
+     top: 50%;
+     width: 10px;
+     height: 10px;
+     border: 1px solid var(--p_color);
+     transform: translateY(-50%);
+ }
+
+ #shop_compare_page .section_content table th {
+     color: var(--text-color);
+ }
+
+ #shop_compare_page .section_content table h6 {
+     padding-top: 15px;
+ }
+
+ #shop_compare_page .section_content .remove_box {
+     padding: 40px 0;
+ }
+
+ #shop_compare_page .section_content table .padding_12 {
+     padding: 12px 0;
+     background-color: var(--white_color);
+ }
+
+ #shop_compare_page .section_content table .bg_white_dark {
+     background-color: #F1F3F4;
+ }
+
+ #shop_compare_page .section_content table .stock_box i {
+     width: 24px;
+     height: 24px;
+     line-height: 24px;
+     font-size: 24px;
+     font-weight: 700;
+     color: #00ff88;
+     padding-right: 5px;
+ }
+
+ #shop_compare_page .section_content table .ratting_box i {
+     margin: 0;
+     color: var(--primary_color_orange_light);
+ }
+
+ #shop_compare_page .section_content table .description_box {
+     padding: 20px 0;
+ }
+
+ #shop_compare_page .section_content table .product_name {
+     padding: 30px 0 27px;
+ }
+
+ #shop_compare_page .section_content .addcart_box .sec_btn_lg {
+     padding: 11px 25px;
+     background-color: var(--primary_color_orange_light);
+     border: none;
+ }
+
+ /* --======= End Shop_cart_page Section Here ======= -- */
+
+
+ #shop_cart_page {
+     padding: 100px 0;
+ }
+
+ #shop_cart_page .cart_heading {
+     background-color: var(--bg_color_dark);
+     padding: 16px 0;
+     border-bottom: 1px solid var(--primary_color_orange_light);
+ }
+
+ #shop_cart_page .cart_detail {
+     padding: 40px 0;
+ }
+
+ #shop_cart_page .cart_detail p,
+ #shop_cart_page .cart_detail i {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     color: var(--p_color);
+ }
+
+ #shop_cart_page .cart_detail .trash i {
+     color: var(--primary_color_orange_light);
+ }
+
+ #shop_cart_page .cart_detail .input-group button {
+     color: var(--p_color);
+     border: none;
+     outline: 0;
+     padding: 0;
+     margin: 0 7.5px;
+     border: none;
+ }
+
+ #shop_cart_page .cart_detail .input-group button:hover i {
+     color: var(--primary_color_orange_light);
+     border-color: var(--primary_color_orange_light);
+     background-color: var(--white_color);
+     transition: 0.5s;
+ }
+
+ #shop_cart_page .cart_detail .input-group .form-control {
+     color: var(--p_color);
+     border: 1px solid #BDBDBD;
+     font-size: 16px;
+     line-height: 28px;
+     padding: 0 25px;
+ }
+
+ #shop_cart_page .cart_coupon_box {
+     padding-bottom: 40px;
+ }
+
+ #shop_cart_page .cart_coupon_box .sec_btn_sm {
+     padding: 11px 20px;
+     font-size: 16px;
+     margin: 0 5px;
+     text-align: center;
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+     border: 1px solid transparent;
+     transition: 0.4s;
+ }
+
+ #shop_cart_page .cart_coupon_box .sec_btn_sm:hover {
+     background-color: var(--white_color);
+     color: var(--primary_color_orange_light);
+     border: 1px solid var(--primary_color_orange_light);
+ }
+
+ #shop_cart_page .cart_coupon_box .button_box_right button {
+     padding: 11px 23px;
+ }
+
+ #shop_cart_page .cart_coupon_box .button_box_left input {
+     padding: 11px 15px;
+     background-color: var(--white_color);
+     border: 1px solid var(--p_color);
+     margin-right: 5px;
+ }
+
+ #shop_cart_page .checkout_box h4 {
+     color: var(--text-color);
+     padding-bottom: 20px;
+ }
+
+
+ #shop_cart_page .checkout_box .checkout .checkout_item .col-lg-5 p {
+     font-size: 16px;
+     line-height: 28px;
+     padding: 17px 20px;
+     background-color: var(--bg_color_light);
+     border: 1px solid #E0E0E0;
+ }
+
+ #shop_cart_page .checkout_box .checkout .checkout_item .col-lg-7 p {
+     padding: 17px 30px;
+     font-size: 16px;
+     line-height: 28px;
+     border: 1px solid #E0E0E0;
+     background-color: var(--white_color);
+ }
+
+ #shop_cart_page .checkout_box .sec_btn_lg {
+     margin-top: 30px;
+     padding: 14px 27px;
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+     background-image: url(../images/btn_bg.png);
+     background-position: right top;
+     background-repeat: no-repeat;
+     transition: 0.4s;
+
+ }
+
+ #shop_cart_page .checkout_box .sec_btn_lg:hover {
+     background-position: left bottom;
+     color: var(--primary_color_orange_light);
+ }
+
+ /* --======= End Shop_cart_page Section Here ======= -- */
+
+ /* --============================= End Shop_cart_Page All CSS Style Here ============================= -- */
+
+
+
+
+ /* --============================= End Shop_cart_Page All CSS Style Here ============================= -- */
+
+ /* --======= Start Shop_checkout_page Section Here ======= -- */
+ #shop_checkout_page {
+     padding: 100px 0;
+ }
+
+ #shop_checkout_page .section_content h4 {
+     color: var(--text-color);
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 40px;
+     padding-bottom: 20px;
+
+ }
+
+ #shop_checkout_page .section_content .bill_info label {
+     color: var(--text-color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     padding-bottom: 5px;
+ }
+
+ #shop_checkout_page .section_content .bill_info input,
+ #shop_checkout_page .section_content .bill_info select,
+ #shop_checkout_page .section_content .bill_info textarea {
+     color: #828282;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     padding: 13px 15px;
+     border: 1px solid #E0E0E0;
+     margin-bottom: 20px;
+     resize: none;
+
+ }
+
+ #shop_checkout_page .section_content .your_order_box .heading_box {
+     color: var(--p_color);
+     background-color: var(--bg_color_dark);
+     padding: 14px 15px;
+     border: 1px solid #E0E0E0;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+ }
+
+ #shop_checkout_page .section_content .your_order_box .detail_box {
+     color: var(--p_color);
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     padding: 40px 0;
+ }
+
+ #shop_checkout_page .section_content .your_order_box .detail_box td {
+     border: 1px solid rgba(224, 224, 224, 0.6);
+     align-self: stretch;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #shop_checkout_page .section_content .your_order_box form button,
+ #shop_checkout_page .section_content .your_order_box form input {
+     border: 1px solid #E0E0E0;
+     height: 30px;
+     background-color: var(--bg_color_dark);
+ }
+
+ #shop_checkout_page .section_content .your_order_box form button i {
+     color: var(--p_color);
+     font-size: 24px;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+ }
+
+ #shop_checkout_page .section_content .your_order_box .price_box tr {
+     background-color: var(--bg_color_dark);
+     padding: 12px 30px;
+     border: 1px solid #E0E0E0;
+ }
+
+ #shop_checkout_page .section_content .your_order_box .payment_box input {
+     margin-right: 12px;
+     line-height: 24px;
+ }
+
+
+
+ #shop_checkout_page .section_content .your_order_box .payment_box input[type=radio],
+ #shop_checkout_page .section_content .your_order_box .payment_box label {
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+ }
+
+ /* --======= End Shop_checkout_page Section Here ======= -- */
+
+ /* --============================= End Shop_cart_Page All CSS Style Here ============================= -- */
+
+
+ /* --============================= Start Wishlist Page CSS Style Here ============================= -- */
+
+ #wishtlist_page {
+     padding: 100px 0;
+ }
+
+ #wishtlist_page h4 {
+
+     padding-bottom: 30px;
+     color: var(--text-color);
+ }
+
+ #wishtlist_page table {
+     margin: 28px 0;
+ }
+
+ #wishtlist_page .product .heading th {
+     background-color: var(--bg_color_dark);
+     padding: 15px;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 28px;
+     padding: 15px 10px;
+
+ }
+
+ #wishtlist_page .product tbody td {
+     color: var(--p_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+     padding: 15px 10px;
+ }
+
+ #wishtlist_page .product tbody button {
+     padding: 11px 26px;
+     background-color: var(--primary_color_orange_light);
+     border-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+     background-image: url(../images/btn_bg.png);
+     background-position: right top;
+     background-size: cover;
+     transition: 0.4s;
+
+ }
+
+ #wishtlist_page .product tbody button:hover {
+     background-position: left bottom;
+ }
+
+ #wishtlist_page .social_media span {
+     color: var(--text-color);
+     padding-right: 17px;
+ }
+
+ #wishtlist_page .social_media a i {
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+     margin: 0 5px;
+     border-radius: 50%;
+ }
+
+ /* --============================= End Wishlist Page CSS Style Here ============================= -- */
+
+
+
+ /* -- ===================== Start All Blog Common CSS Style Here ======================= -- */
+ /* ========= Start blog_page CSS Style ========= */
+
+ .section_content .blog_box .blog_classic_info_box {
+     padding: 40px;
+ }
+
+ .section_content .blog_box .date_box {
+     padding-bottom: 6px;
+     gap: 22px
+ }
+
+ .section_content .blog_box .blog_classic_info_box p {
+     color: var(--p_color);
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     transition: 0.4s;
+     cursor: default;
+ }
+
+ .section_content .blog_box .date_box p:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_box .date_box p i {
+     margin-right: 6px;
+ }
+
+ .section_content .blog_box .blog_classic_info_box h3 {
+     color: var(--text-color);
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 40px;
+     transition: 0.4s;
+     cursor: pointer;
+ }
+
+ .section_content .blog_box .blog_classic_info_box h3:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_box .parent_p {
+     padding: 12px 0 18px;
+ }
+
+ .section_content .blog_box .sec_btn_lg {
+     color: var(--p_color);
+     position: relative;
+     transition: 0.4s;
+ }
+
+ .section_content .blog_box .sec_btn_lg:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_box .sec_btn_lg::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     width: 0%;
+     height: 3px;
+     background-color: var(--primary_color_orange_light);
+     transition: 0.4s;
+ }
+
+ .section_content .blog_box .sec_btn_lg:hover:after {
+     width: 100%;
+ }
+
+ .section_content .blog_box .round_play_box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+
+ }
+
+ .section_content .blog_box .round_play_box i {
+     font-size: 50px;
+     color: var(--primary_color_orange_light);
+     text-align: center;
+     height: 70px;
+     width: 70px;
+     line-height: 70px;
+     background-color: var(--white_color);
+     border-radius: 50%;
+
+ }
+
+ .section_content .blog_box .round_play_box::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     animation: round_box 4s ease-in-out infinite;
+     background-color: var(--white_color);
+     border-radius: 50%;
+     transition: 0.4s;
+     z-index: -1;
+ }
+
+ .section_content .blog_box .round_play_box::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     animation: round_box 4s ease-in-out 1s infinite;
+     background-color: var(--white_color);
+     border-radius: 50%;
+     transition: 0.4s;
+     z-index: -1;
+ }
+
+ @keyframes round_box {
+     0% {
+         transform: scale(1);
+         opacity: 0;
+     }
+
+     30% {
+         opacity: 0.4;
+     }
+
+     70% {
+         opacity: 0.3;
+         transform: scale(1.6);
+     }
+
+     100% {
+         transform: scale(1.8);
+         opacity: 0;
+     }
+ }
+
+ #blog_with_sidebar_page .pagination_box {
+     padding: 20px 0 40px;
+ }
+
+ @keyframes round_box {
+     0% {
+         transform: scale(1);
+         opacity: 0;
+     }
+
+     30% {
+         opacity: 0.4;
+     }
+
+     70% {
+         opacity: 0.3;
+         transform: scale(1.6);
+     }
+
+     100% {
+         transform: scale(1.8);
+         opacity: 0;
+     }
+ }
+
+ .section_content .blog_box .pagination_box {
+     padding: 20
+ }
+
+ .section_content .blog_box .pagination_box p {
+     position: relative;
+     color: var(--text-color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     display: inline-block;
+ }
+
+ .section_content .blog_box .pagination_box .progress {
+     height: 3px;
+     margin-top: 10px;
+
+ }
+
+ .section_content .blog_box .pagination_box .progress-bar {
+     width: 30%;
+     height: 100%;
+     background-color: var(--text-color);
+ }
+
+ .section_content .blog_box .pagination_box .pagination a {
+     color: #1d1d1d;
+     font-size: 16px;
+     line-height: 36px;
+     text-align: center;
+     padding: 3px 15px;
+
+ }
+
+ .section_content .blog_box .pagination_box .pagination a.active {
+     background-color: var(--text-color);
+     color: var(--white_color);
+
+ }
+
+ .section_content .blog_sidebar_box .aside_bar {
+     padding: 0 20px;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .search_box .form-search input,
+ .section_content .blog_sidebar_box .aside_bar .search_box .form-search button {
+     border-color: transparent;
+     background-color: var(--bg_color_dark);
+     padding: 16px;
+
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .search_box .form-search button i {
+     width: 40px;
+     height: 100%;
+     line-height: 100%;
+     border-left: 1px solid var(--p_color);
+     transition: 0.5s;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .search_box .form-search button i:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .wedget h6 {
+     display: inline-block;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 30px;
+     margin: 40px 0 23px;
+     border-bottom: 1px solid var(--primary_color_orange_light);
+ }
+
+
+ .section_content .blog_sidebar_box .aside_bar .catagory li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 0;
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .catagory li a {
+     color: var(--p_color);
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     transition: 0.4s;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .catagory li a:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_post__item {
+     display: flex;
+     padding-right: 40px;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_img {
+     padding-right: 15px;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_info p {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+     padding-right: 40px;
+     padding-bottom: 4px;
+     transition: 0.4s;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_info p:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_info a {
+     color: var(--p_color);
+     transition: 0.4s;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .recent_artical .recent_info a:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .popular_tag a {
+     color: var(--p_color);
+     font-size: 16px;
+     line-height: 28px;
+     padding: 5px 9px;
+     margin: 2px;
+     background-color: var(--bg_color_dark);
+     transition: 0.4s;
+ }
+
+ .section_content .blog_sidebar_box .aside_bar .popular_tag a:hover {
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+ }
+
+ /* ========= End blog_page CSS Style ========= */
+
+ /* -- ===================== Start All Blog Common CSS Style Here ======================= -- */
+
+
+
+ /* --============================= Start Blogs Page CSS Style Here ============================= -- */
+ #blog_page {
+     padding: 100px;
+ }
+
+ #blog_page .product_box {
+     padding-bottom: 20px;
+ }
+
+ #blog_page .product_box .product_img_box {
+     overflow: hidden;
+ }
+
+ #blog_page .product_box .product_img_box img {
+     transition: 0.4s;
+ }
+
+ #blog_page .product_box .product_img_box:hover img {
+     transform: scale(1.2);
+     transition: 0.4s;
+ }
+
+ #blog_page .product_box .product_img_box .shape_box {
+     height: auto;
+     width: auto;
+     border-radius: 0;
+     padding: 6px 15px;
+     background-color: rgba(68, 68, 68, 0.4);
+     left: 0;
+     top: 0;
+     transform: rotate(0deg);
+     transition: 0.4s;
+
+ }
+
+ #blog_page .product_box .product_img_box .shape_box:hover {
+     background-color: #444444;
+ }
+
+ #blog_page .product_box .product_img_box .shape_box p {
+     color: var(--white_color);
+ }
+
+ #blog_page .product_box .product_info_box {
+     padding: 20px;
+ }
+
+ #blog_page .product_box .product_info_box h4 {
+     padding-bottom: 7px;
+     transition: 0.4s;
+     color: var(--text-color);
+ }
+
+ #blog_page .product_box .product_info_box h4:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ #blog_page .product_box .product_info_box .sec_btn_lg {
+     margin-top: 10px;
+     color: var(--p_color);
+     transition: 0.4s;
+     border: 2px solid transparent;
+     position: relative;
+ }
+
+
+ /* --============================= End Blogs Page CSS Style Here ============================= -- */
+
+
+
+
+
+ /* --============================= Start Blogs Classic Page CSS Style Here ============================= -- */
+ #blog_classic_page {
+     padding: 100px 0;
+ }
+
+ /* --============================= End Blogs Classic Page CSS Style Here ============================= -- */
+
+
+ /* --============================= Start Blogs Classic Page CSS Style Here ============================= -- */
+ #blog_with_sidebar_page {
+     padding: 100px 0;
+ }
+
+
+
+ /* --============================= End Blogs Classic Page CSS Style Here ============================= -- */
+
+
+
+ /* --============================= Start Blogs Details Page CSS Style Here ============================ */
+ #blog_detail_page {
+     padding: 100px 0;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .date_box p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     color: var(--p_color);
+     font-family: var(--primary_font);
+     display: inline-flex;
+     align-items: start;
+     margin: 36px 26px 5px 0;
+     transition: 0.4s;
+     cursor: default;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .date_box p i {
+     font-size: 16px;
+     width: 24px;
+     height: 24px;
+     line-height: 24px;
+     margin-right: 10px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .date_box p:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box p {
+     color: var(--p_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .padding_p {
+     padding-top: 18px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box h3 {
+     font-size: 30px;
+     padding-bottom: 6px 0 15px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .blockquote {
+     padding: 40px 0 4px 50px;
+     margin: 30px 0;
+     background-color: var(--bg_color_dark);
+     border-left: 5px solid var(--primary_color_orange_light);
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .blockquote p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+     font-style: italic;
+     padding-bottom: 24px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .blockquote .blockquote-footer {
+     font-weight: 700;
+     font-size: 20px;
+     color: var(--text-color);
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .galery_box {
+     margin: 30px 0;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .tag_social_box {
+     padding: 40px 0;
+     border-top: 1px solid #E0E0E0;
+     border-bottom: 1px solid #E0E0E0;
+     margin-top: 30px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .tag_social_box a {
+     padding: 5px 10px;
+     margin-left: 24px;
+     color: var(--p_color);
+     background-color: var(--bg_color_dark);
+     transition: 0.5s;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .tag_social_box a:hover {
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .social_media a {
+     padding: 0;
+     margin: 0 0 0 10px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_box_main {
+     padding: 25px 30px;
+     margin: 70px 0px;
+     background-color: var(--bg_color_dark);
+ }
+
+ #blog_detail_page .section_content .comment_box_main .comment_img_box {
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+     margin-right: 23px;
+ }
+
+
+ #blog_detail_page .section_content .comment_box_main .icon_box_24 a {
+     color: var(--p_color);
+     transition: 0.4s;
+     padding: 0;
+ }
+
+ #blog_detail_page .section_content .comment_box_main .icon_box_24 a:hover i {
+     color: var(--h1_color);
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #blog_detail_page .section_content .comment_box_main .author {
+     color: var(--primary_color_orange_light);
+     padding-bottom: 24px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .replay_box {
+     margin: 20px 0;
+     padding-bottom: 36px;
+     border-bottom: 1px solid #E0E0E0;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .replay_box_second {
+     margin-left: 80px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .replay_box .comment_img_box {
+     margin-right: 23px;
+     width: 70px;
+     height: 70px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_img_box img {
+     border-radius: 50%;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_detail_box h5 {
+     color: var(--text-color);
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_detail_box .date {
+     color: var(--Paragraph-Color, #444);
+     font-family: var(--primary_font);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     display: flex;
+     align-items: center;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_detail_box .date i {
+     margin-right: 5px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_detail_box .detail_p {
+     padding: 12px 0 14px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_detail_box .replay_p {
+     color: var(--primary_color_dark);
+     font-weight: 500;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box {
+     padding: 105px 0 40px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box h3 {
+     color: var(--text-color);
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 40px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box p {
+     color: var(--p_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+     padding: 7px 0 54px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box input,
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box textarea {
+     background-color: var(--bg_color_dark);
+     padding: 14px 15px;
+     margin: 12px 0;
+     border-color: transparent;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box .sec_btn_lg {
+     padding: 13px 26px;
+     color: var(--white_color);
+     background-color: var(--black_color);
+     border-color: transparent;
+     margin-top: 12px;
+ }
+
+ #blog_detail_page .section_content .blog_classic_info_box .comment_post_box .sec_btn_lg:hover {
+     background-color: var(--primary_color_orange_light);
+ }
+
+ /* --============================= End Blogs Details Page CSS Style Here ============================= -- */
+
+
+
+ /* -- ===================== Start Error Page CSS Style Here ======================= -- */
+ #error_page {
+     padding: 122px 0 120px;
+     background-image: linear-gradient(107deg, #1C293F -0.36%, #161F33 98.58%);
+     ;
+ }
+
+ #error_page .section_content .error_box p {
+     padding: 10px 0 40px;
+     color: var(--white_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ #error_page .section_content .error_box button {
+     border: transparent;
+     padding: 13px 20px;
+     background-color: var(--primary_color_orange_light);
+     transition: 0.4s;
+ }
+
+ #error_page .section_content .error_box button:hover {
+     color: var(--primary_color_orange_light);
+     background-color: var(--white_color);
+ }
+
+ /* -- ===================== End Error Page CSS Style Here ======================= -- */
+
+
+
+ /* --=================== Start Footer Section CSS Style Here===================-- */
+
+ #footer {
+     position: relative;
+     background-size: cover !important;
+     background-position: center !important;
+     z-index: 8;
+ }
+
+ #footer::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     z-index: -4;
+     background-color: rgba(17, 22, 30, 0.93);
+ }
+
+ #footer .footer_upper {
+     padding: 76px 0;
+     border-bottom: 1px solid #E0E0E0;
+ }
+
+ #footer .footer_upper .icon_box_24 li {
+     margin: 10px;
+ }
+
+ #footer .footer_upper .icon_box_24 li i {
+     color: var(--p_color);
+ }
+
+ #footer .icon_box_24 li a:hover i,
+ #footer .icon_box_24 li i:hover {
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+     transition: 0.4s ease;
+ }
+
+ #footer .footer_lower {
+     padding: 70px 0;
+     color: var(--white_color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 28px;
+ }
+
+ #footer .footer_lower h4 {
+     padding-bottom: 22px;
+ }
+
+ #footer .footer_lower a {
+     color: var(--white_color);
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 28px;
+     transition: 0.5s ease;
+ }
+
+ #footer .footer_lower .footer_link_box a::before {
+     content: "\f054";
+     font-family: "Font Awesome 6 Free";
+     font-weight: 700;
+     padding-right: 7px;
+ }
+
+ #footer .footer_lower a:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ #footer .footer_lower .wedget_7 .icon_box_24 i {
+     margin-right: 10px;
+     background: none;
+ }
+
+ #footer .footer_lower p {
+     color: var(--white_color);
+     margin-bottom: 22px;
+ }
+
+ #footer .footer_lower .form_box {
+     background-color: var(--white_color);
+ }
+
+
+ #footer .footer_lower .form_box button {
+     color: var(--white_color);
+     background-color: var(--primary_color_orange_light);
+ }
+
+ #footer .footer_bottom_bar {
+     background-color: rgba(255, 255, 255, 0.1);
+ }
+
+ #footer .footer_bottom_bar p {
+     padding: 21px 0;
+     color: var(--white_color);
+     font-size: 16px;
+     line-height: 28px;
+ }
+
+ #footer .footer_bottom_bar p a {
+     color: var(--white_color);
+     font-size: 16px;
+     line-height: 28px;
+     transition: 0.5s ease;
+ }
+
+ #footer .footer_bottom_bar p a:hover {
+     color: var(--primary_color_orange_light);
+ }
+
+ /* --=================== End Footer Section CSS Style Here===================-- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* -- =================== Start All Extra Section Here =================== -- */
+
+ /* --======= Start Search PopUp Section Here ======= -- */
+ #home_page_search_popup {
+     position: fixed;
+     inset: 0;
+     background-color: rgba(0, 0, 0, 0.9);
+     display: none;
+     transition: 0.5s;
+     z-index: 100;
+ }
+
+ #home_page_search_popup.show {
+     display: block;
+ }
+
+ #home_page_search_popup .search_box {
+     padding: 0 20px;
+     background-color: none;
+     border: 1px solid var(--primary_color_orange_light);
+     border-radius: 50px;
+ }
+
+ #home_page_search_popup .search_box input {
+     font-size: 20px;
+     line-height: 28px;
+     width: 100%;
+     color: var(--white_color);
+     background: none;
+     border: none;
+     outline: none;
+ }
+
+ #home_page_search_popup .search_box input:focus {
+     border: none;
+     outline: none;
+     background: none;
+ }
+
+ #home_page_search_popup .search_box input::placeholder {
+     color: var(--white_color);
+ }
+
+ #home_page_search_popup .search_box button {
+     border: none;
+     background: none;
+ }
+
+ #home_page_search_popup .search_box button i {
+     color: var(--white_color);
+     text-align: center;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 25px;
+     height: 100%;
+     padding: 10px;
+ }
+
+ #home_page_search_popup .btn_close {
+     position: absolute;
+     right: 5%;
+     top: 5%;
+     background: none;
+     border: none;
+ }
+
+ #home_page_search_popup .btn_close i {
+     color: var(--primary_color_orange_light);
+     text-align: center;
+     font-size: 24px;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     border: 1px solid var(--primary_color_orange_light);
+     border-radius: 50%;
+     background: none;
+     transform: rotate(0deg);
+     transition: 0.4s ease;
+ }
+
+ #home_page_search_popup .btn_close i:hover {
+     background-color: var(--white_color);
+     border-color: var(--white_color);
+     transform: rotate(120deg);
+ }
+
+ /* --======= End Search PopUp Section Here ======= -- */
+
+ /* --======= End Shoping_cart Section Here ======= -- */
+
+ #shopping_cart_offcanvas {
+     position: fixed;
+     inset: 0;
+     background-color: rgba(0, 0, 0, 0.9);
+     z-index: 99;
+     transition: 0.4s;
+     transform: scaleX(0);
+     transform-origin: right center;
+ }
+
+ #shopping_cart_offcanvas.show {
+     transform: scaleX(1);
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box {
+     position: absolute;
+     width: 450px;
+     height: 100%;
+     top: 0;
+     right: 0;
+     padding: 80px 30px;
+     background-color: var(--white_color);
+     opacity: 0;
+     visibility: hidden;
+     transform: scaleX(0);
+     transition: 0.5s;
+     transition-delay: 0.1s;
+     transform-origin: right center;
+
+ }
+
+ #shopping_cart_offcanvas.show .canvas_info_box {
+     opacity: 1;
+     visibility: visible;
+     transform: scaleX(1);
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .section_content {
+     padding: 0 0 0 30px;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .shopping_cart_item {
+     padding: 22px 0;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .sample_box {
+     padding: 10px 0;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box h4 {
+     color: var(--h1_color);
+     padding: 24px 0;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box h4:first-child {
+     padding: 10px 0;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .sample_box p span {
+     color: var(--primary_color_orange_light);
+     font-weight: 400;
+     ;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .sample_box p {
+     color: var(--primary_color_orange_light);
+     font-size: 16px;
+     ;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box img {
+     padding-right: 16px;
+ }
+
+ #shopping_cart_offcanvas .canvas_info_box .form_box .sec_btn_lg {
+     text-align: center;
+     margin-right: 15px;
+     padding: 17px 37px;
+     background-color: var(--primary_color_orange_light);
+     color: var(--white_color);
+ }
+
+
+ #shopping_cart_offcanvas .btn_close {
+     position: absolute;
+     right: 50px;
+     top: 50px;
+     transform: translateY(-50%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: 50px;
+     text-align: center;
+     background-color: var(--primary_color_orange_light);
+     font-size: 30px;
+ }
+
+ /* --======= End Shoping_cart Section Here ======= -- */
+ /* -- =================== Start All Extra Section Here =================== -- */

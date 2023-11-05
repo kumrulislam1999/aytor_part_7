@@ -1,0 +1,109 @@
+ /* --=================== Start All Reset CSS Style Here===================-- */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ ol,
+ ul,
+ small,
+ span,
+ address,
+ button,
+ input,
+ textarea,
+ select,
+ option {
+     margin: 0;
+     padding: 0;
+ }
+
+ ol,
+ ul {
+     list-style-type: none;
+ }
+
+ a,
+ a:hover {
+     text-decoration: none;
+ }
+
+ input:focus,
+ .form_box input,
+ .form_box input:focus,
+ .form_box button,
+ .form_box textarea,
+ .form_box textarea:focus,
+ select {
+     border: 0;
+     outline: 0;
+     padding: 12px 17px;
+ }
+
+ /* --=================== End All Reset CSS Style Here===================-- */
+
+
+
+ /* --=================== Start All Section Common CSS Style Here===================-- */
+ :root {
+     --primary_font: 'Josefin Sans', sans-serif;
+     --p_font: 'Roboto', sans-serif;
+ }
+
+ body {
+     font-family: var(--primary_font);
+ }
+
+ P {
+     font-family: var(--p_font);
+ }
+
+ .section_content h2 {
+     font-size: 48px;
+     line-height: 58px;
+     font-weight: 700;
+
+ }
+
+ .section_content h3 {
+     font-size: 36px;
+     line-height: 46px;
+     font-weight: 700;
+
+ }
+
+ .section_content h4 {
+     font-size: 24px;
+     line-height: 34px;
+     font-weight: 700;
+
+ }
+
+ .section_content h5 {
+     font-size: 20px;
+     line-height: 30px;
+     font-weight: 600;
+
+ }
+
+ .section_content .sec_btn_sm {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 26px;
+ }
+
+ .section_content .sec_btn_lg {
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 30px;
+ }
+
+ .section_content p {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: 400;
+ }
+
+ /* --=================== End All Section Common CSS Style Here===================-- */
