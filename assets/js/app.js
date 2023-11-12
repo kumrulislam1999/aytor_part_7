@@ -29,6 +29,15 @@ $(function () {
         prevArrow: `<i class='bx bx-left-arrow-circle arrow_left' ></i> `,
         nextArrow: `<i class='bx bx-right-arrow-circle arrow_right' ></i>`,
         appendDots: $(".dot_items"),
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                }
+            }]
     })
 
     $('.arriavl_sliding_box').slick({
@@ -40,6 +49,32 @@ $(function () {
         slidesToShow: 4,
         prevArrow: `<i class='bx bx-left-arrow-circle arrow_left' ></i> `,
         nextArrow: `<i class='bx bx-right-arrow-circle arrow_right' ></i>`,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
     })
 
 
@@ -49,17 +84,63 @@ $(function () {
         slidesToShow: 2,
         arrows: false,
         dots: true,
+        centerMode: true,
+        centerPadding: '0px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    arrows: false,
+                }
+            }
+        ]
 
     })
 
     $('.latest_sliding_box').slick({
         autoplay: true,
         autoplaySpeed: 1000,
-        slidesToShow: 2,
+        slidesToShow: 3,
         arrows: true,
         dots: true,
         prevArrow: `<i class='bx bx-left-arrow-circle arrow_left' ></i> `,
         nextArrow: `<i class='bx bx-right-arrow-circle arrow_right' ></i>`,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
     })
 
 
@@ -71,6 +152,27 @@ $(function () {
         dots: false,
         prevArrow: `<i class='bx bx-left-arrow-circle arrow_left' ></i> `,
         nextArrow: `<i class='bx bx-right-arrow-circle arrow_right' ></i>`,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }]
     })
     // ====End Home_page sliding jQuery ===== //
 
@@ -94,6 +196,29 @@ $(function () {
         slidesToShow: 6,
         arrows: false,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                }
+            }, {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }]
     })
     // ==== End About_page sliding jQuery ===== //
 
