@@ -270,6 +270,22 @@
 
     /* ====== End Blog_Classic Page RESPONSIVE Here ====== */
 
+
+    /* ====== End Blog Page RESPONSIVE Here ====== */
+    #blog_page {
+        padding: 100px 0;
+    }
+
+    #blog_page .product_img_box img {
+        width: 100%;
+        ;
+    }
+
+    #blog_page .product_info_box {
+        padding: 40px;
+    }
+
+    /* ====== End Blog Page RESPONSIVE Here ====== */
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -632,6 +648,19 @@
     }
 
     /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
+
+
+    /* ====== Start Blog Page RESPONSIVE Here ====== */
+    #blog_page {
+        padding: 60px 0px;
+    }
+
+    #blog_page .product_img_box img {
+        width: 100%;
+        ;
+    }
+
+    /* ====== End Blog Page RESPONSIVE Here ====== */
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -1128,6 +1157,23 @@
 
     /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
 
+
+
+
+    /* ====== Start Blog Page RESPONSIVE Here ====== */
+    #blog_page {
+        padding: 60px 0px;
+    }
+
+    #blog_page .product_img_box img {
+        width: 100%;
+        ;
+    }
+
+    /* ====== End Blog Page RESPONSIVE Here ====== */
+
+
+
 }
 
 @media (max-width:575.98px) {
@@ -1615,7 +1661,7 @@
 
     /* ====== End blog Details Page RESPONSIVE Here ====== */
 
-    /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
+    /* ====== Start Blog_Classic Sidebar Page RESPONSIVE Here ====== */
     #blog_with_sidebar_page {
         padding: 20px 0 30px;
     }
@@ -1640,7 +1686,7 @@
     /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
 
 
-    /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
+    /* ====== Start Blog_Classic Sidebar Page RESPONSIVE Here ====== */
     #blog_classic_page {
         padding: 40px 0;
     }
@@ -1651,5 +1697,17 @@
 
     /* ====== End Blog_Classic Sidebar Page RESPONSIVE Here ====== */
 
+
+    /* ====== Start Blog Page RESPONSIVE Here ====== */
+    #blog_page {
+        padding: 40px 0px;
+    }
+
+    #blog_page .product_img_box img {
+        width: 100%;
+        ;
+    }
+
+    /* ====== End Blog Page RESPONSIVE Here ====== */
 
 }

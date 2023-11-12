@@ -1243,13 +1243,6 @@
 
 
 
-
-
-
-
-
-
-
  /* -- ======= Start About_page_successive Section CSS Style Here ======= -- */
  #about_page_successive .successive_item img {
      padding: 25px 29px;
@@ -2959,7 +2952,7 @@
 
  /* --============================= Start Blogs Page CSS Style Here ============================= -- */
  #blog_page {
-     padding: 100px;
+     padding: 100px 0;
  }
 
  #blog_page .product_box {
@@ -3001,10 +2994,11 @@
  }
 
  #blog_page .product_box .product_info_box {
-     padding: 20px;
+     padding: 20px 0;
  }
 
  #blog_page .product_box .product_info_box h4 {
+     font-size: 22px;
      padding-bottom: 7px;
      transition: 0.4s;
      color: var(--text-color);
