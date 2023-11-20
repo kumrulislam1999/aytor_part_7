@@ -48,24 +48,63 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="navbar-collapse collapse mx-auto" id="main_navbar">
                     <ul class="navbar-nav text-end mx-auto">
-                        <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
-                        <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
+                        <li class="nav-item dropdown"><a href="./blog.html" class="nav-link active">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+            <ul class="mega_menu">
+                <li><a href="shop.html">Pagelist 1</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./index.html">Home</a></li>
+                        <li class="nav_item"><a href="./about.html">About</a></li>
+                        <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 2</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                        <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                        <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                        <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 3</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                        <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                        <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                        <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                Sidebar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 4</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                        <li class="nav_item"><a href="./404.html">Error</a></li>
+                    </ul>
+                </li>
+            </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -93,122 +132,158 @@
             <div class="container">
                 <div class="section_content">
                     <div class="blog_box">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-1.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                        <div class="row align-items-start justify-content-between">
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-1.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Color, Size, Material Swatches</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Color, Size, Material Swatches</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-2.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-2.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Fashion coats 2022: key trends</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Fashion coats 2022: key trends</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-3.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-3.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Fashion Women Long Skat</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Fashion Women Long Skat</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-4.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-4.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Minimal Design Inspiration</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Minimal Design Inspiration</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-5.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-5.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Fashion T-shirt 2022: key trends</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Fashion T-shirt 2022: key trends</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-6.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-6.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Women Stylish Bag & Shose</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Women Stylish Bag & Shose</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-7.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-7.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Women Fashionable Coats 2022</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Women Fashionable Coats 2022</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-8.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-8.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>Fashion Women New key trends</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>Fashion Women New key trends</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog_item product_box col-lg-4 col-md-6 col-12">
-                                <div class="product_img_box">
-                                    <img src="./assets/images/blog-s-3-9.jpg" alt="" class="img-fluid">
-                                    <div class="shape_box">
-                                        <p>January 10, 2022</p>
+                            <div class="blog_item col-lg-4 col-md-6 col-12">
+                                <div class="product_box">
+                                    <div class="product_img_box">
+                                        <img src="./assets/images/blog-s-3-9.jpg" alt="" class="img-fluid">
+                                        <div class="shape_box">
+                                            <p>January 10, 2022</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product_info_box">
-                                    <h4>New Trends Hudi Sweater</h4>
-                                    <p>Progressively productize installed base testing procedures whereas resource</p>
-                                    <a href="#" class="sec_btn_lg">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                                    <div class="product_info_box">
+                                        <h4>New Trends Hudi Sweater</h4>
+                                        <p>Progressively productize installed base testing procedures whereas resource
+                                        </p>
+                                        <a href="#" class="sec_btn_lg">Read More <i
+                                                class='bx bx-right-arrow-alt'></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +295,7 @@
                                     </span>
                                 </p>
                             </div>
-                            <div class="pagination_item col-lg-6 col-sm-6 col-12">
+                            <div class="pagination_item col-lg-6 col-sm-6 col-12 text-center text-md-end">
                                 <ul class="pagination justify-content-end">
                                     <li class="page-item"><a class="page-link disable" href="#">Previous</a></li>
                                     <li class="page-item"><a class="page-link active" href="#">1</a></li>
@@ -344,7 +419,6 @@
     <!--======= Start All Extra Section Here ======= -->
 
     <!--======= Start Search PopUp Section Here ======= -->
-
     <section id="home_page_search_popup">
         <div class="container h-100">
             <div class="row align-items-center justify-content-center h-100">

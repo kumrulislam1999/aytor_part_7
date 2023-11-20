@@ -1,5 +1,9 @@
 $(function () {
     // ==== Start header_page click jQuery Event ===== //
+
+    $("#multiple_nav").on("click", function () {
+        $('#multilink_nav_page').addClass('show')
+    })
     $('.header_search_box').on('click', function () {
         $('#home_page_search_popup').addClass('show')
 
@@ -15,6 +19,14 @@ $(function () {
 
     $('.btn_close').on('click', function () {
         $('#shopping_cart_offcanvas').removeClass('show')
+    })
+
+    $(window).on('load', function () {
+        $('#preloader_section').addClass('show')
+    })
+
+    $(".close_btn").on('click', function () {
+        $('#preloader_section').removeClass('show')
     })
     // ====End header_page click jQuery Event ===== //
 
@@ -39,6 +51,7 @@ $(function () {
                 }
             }]
     })
+
 
     $('.arriavl_sliding_box').slick({
         accessibility: true,
@@ -250,7 +263,7 @@ $(function () {
         transition: 0.5,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: "0",
+        centerPadding: "1px",
         arrows: false,
         fade: true,
         speed: 500,
@@ -263,7 +276,7 @@ $(function () {
         transition: 0.5,
         slidesToShow: 5,
         centerMode: true,
-        centerPadding: "10px",
+        centerPadding: "1px",
         arrows: false,
         speed: 500,
         asNavFor: ".shop_details_sliding_box",
@@ -305,9 +318,31 @@ $(function () {
         autoplaySpeed: 2000,
         transition: 0.5,
         slidesToShow: 4,
+        centerMode: true,
+        centerPadding: '1px',
         arrows: false,
         speed: 500,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
 
     })
 

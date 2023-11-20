@@ -31,15 +31,16 @@
  }
 
  input:focus,
- .form_box input,
- .form_box input:focus,
- .form_box button,
- .form_box textarea,
- .form_box textarea:focus,
+ .section_content input,
+ .section_content input:focus,
+ .section_content button,
+ .section_content textarea,
+ .section_content textarea:focus,
  select {
-     border: 0;
-     outline: 0;
-     padding: 12px 17px;
+     border: none;
+     outline: none;
+     background-color: transparent;
+     ;
  }
 
  /* --=================== End All Reset CSS Style Here===================-- */

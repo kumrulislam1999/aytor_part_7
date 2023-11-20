@@ -41,7 +41,7 @@
 <body>
     <!--======= Header Section Here ======= -->
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a href="" class="navbar-brand"><img src="./assets/images/Logo.png" alt="" class="img-fluid"></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_navbar"> <span
@@ -51,21 +51,60 @@
                         <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+                <ul class="mega_menu">
+                    <li><a href="shop.html">Pagelist 1</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./index.html">Home</a></li>
+                            <li class="nav_item"><a href="./about.html">About</a></li>
+                            <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 2</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                            <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                            <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                            <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 3</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                            <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                            <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                    Sidebar</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 4</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                            <li class="nav_item"><a href="./404.html">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -146,102 +185,89 @@
                             placeholder="Notes about your order, e.g. special notes for delivery." rows="5"></textarea>
                     </div>
                 </div>
-                <h4>Your Order</h4>
-                <div class="your_order_box">
-                    <table class="w-100">
-                        <thead class="w-100">
-                            <tr class="row  heading_box w-100 text-center align-items-center justify-content-between">
-                                <th class="col-lg-3">
-                                    <p><b>Image</b></p>
-                                </th>
-                                <th class="col-lg">
-                                    <p><b>Product Name</b></p>
-                                </th>
-                                <th class="col-lg">
-                                    <p><b>Price/Unit</b></p>
-                                </th>
-                                <th class="col-lg">
-                                    <p><b>Quantity</b></p>
-                                </th>
-                                <th class="col-lg">
-                                    <p><b>Total</b></p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div class="order_box">
+                    <h4>Your Order</h4>
+                    <form action="#" class="order_form d-none d-md-block">
+                        <table class=" mb-20 w-100 table-sm table-responsive">
+                            <thead>
+                                <tr class="heading_box">
+                                    <th class="image">Image</th>
+                                    <th class="name">Product Name</th>
+                                    <th class="price">Price</th>
+                                    <th class="quantity">Quantity</th>
+                                    <th class="total">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="detail_box">
+                                    <td>
+                                        <a href="shop.html"><img width="140" height="140"
+                                                src="assets/images/cart-img-1-1.jpg" alt="Image"></a>
+                                    </td>
+                                    <td><a href="shop.html">Parmesan
+                                            Vegetable</a></td>
+                                    <td><span>$18</span></td>
+                                    <td><span>01</span></td>
+                                    <td><span>$18</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="ordertable">
+                                <tr class="subtotal">
+                                    <th>Subtotal</th>
+                                    <td colspan="4"><span>$281.05</span>
+                                    </td>
+                                </tr>
+                                <tr class="shipping">
+                                    <th>Shipping</th>
+                                    <td colspan="4">Enter your address to view shipping options.</td>
+                                </tr>
+                                <tr class="total">
+                                    <th>Total</th>
+                                    <td data-title="Total" colspan="4"><span>$281.05</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                    <form action="#" class="order_form order_form_sm d-md-none">
+                        <table class="order_box mb-20 w-100 table-sm table-responsive">
                             <tr>
-                                <td class="w-100">
-                                    <table class="w-100">
-                                        <tr
-                                            class="row detail_box  text-center align-items-center w-100 justify-content-between">
-                                            <td class="col-lg-3">
-                                                <img src="./assets/images/cart-img-1-1.jpg" class="img-fluid" alt="">
-                                            </td>
-                                            <td class="col-lg">
-                                                <p>Jacket Hoodie Sweater</p>
-                                            </td>
-                                            <td class="col-lg">
-                                                <p>$130.00</p>
-                                            </td>
-                                            <td class="col-lg">
-                                                <form action=""
-                                                    class="d-flex align-items-center justify-content-between">
-                                                    <button type="button" class="col-2"><i
-                                                            class='bx bx-plus'></i></button>
-                                                    <input type="number" class="text-center col-7" value="1"
-                                                        placeholder="1"></input>
-                                                    <button type="button" class="col-2"><i
-                                                            class='bx bx-minus'></i></button>
-                                                </form>
-                                            </td>
-                                            <td class="col-lg">
-                                                <p>$130.00</p>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <th class="image">Image</th>
+                                <td><a href="shop.html"><img width="140" height="140"
+                                            src="assets/images/cart-img-1-1.jpg" alt="Image"></a>
                                 </td>
                             </tr>
-
                             <tr>
-                                <td>
-                                    <table class="w-100 price_box">
-                                        <tr class="row align-items-center justify-content-between w-100">
-                                            <th class="col-lg-4">Subtotal</th>
-
-                                            <td class="col-lg-8 text-end">$281.05</td>
-                                        </tr>
-                                        <tr class="row align-items-center justify-content-between w-100">
-                                            <th class="col-lg-4">Shipping</th>
-
-                                            <td class="col-lg-8 text-end">Enter your address to view shipping options.
-                                            </td>
-                                        </tr>
-                                        <tr class="row align-items-center justify-content-between w-100">
-                                            <th class="col-lg-4">Total</th>
-
-                                            <td class="col-lg-8 text-end">$281.05</td>
-                                        </tr>
-                                    </table>
-                                </td>
+                                <th class="name">Product Name</th>
+                                <td><a href="shop.html">Parmesan
+                                        Vegetable</a></td>
                             </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="direct_link payment_box d-flex align-items-center">
-                        <input type="radio" id="direct" name="card"><label for="direct">Direct bank transfer</label>
-                    </div>
-                    <div class="cheque_link payment_box d-flex align-items-center">
-                        <input type="radio" id="cheque" name="card"><label for="cheque">Cheque Payment</label>
-                    </div>
-                    <div class="credit_link payment_box d-flex align-items-center">
-                        <input type="radio" id="credit" name="card"><label for="credit">Credit Cart <img
-                                src="./assets/images/card_link_image.webp" alt="" class="img-fluid"></label>
-                    </div>
-                    <div class="paypal_link payment_box d-flex align-items-center">
-                        <input type="radio" id="paypal" name="card"><label for="paypal">Paypal <img
-                                src="./assets/images/paypal.webp" alt="" class="img-fluid"></label>
-                    </div>
-
+                            <tr>
+                                <th class="price">Price</th>
+                                <td><span>$18</span></td>
+                            </tr>
+                            <tr>
+                                <th class="quantity">Quantity</th>
+                                <td><span>01</span></td>
+                            </tr>
+                            <tr>
+                                <th class="total">Total</th>
+                                <td><span>$18</span></td>
+                            </tr>
+                            <tr class="subtotal">
+                                <th>Subtotal</th>
+                                <td><span>$281.05</span></td>
+                            </tr>
+                            <tr class="shipping">
+                                <th>Shipping</th>
+                                <td><span>$281.05</span></td>
+                            </tr>
+                            <tr class="total">
+                                <th>Total</th>
+                                <td><span>$281.05</span></td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
             </div>
 
@@ -250,25 +276,28 @@
     </main>
     <!--============== End About_page_Main Section Here ============== -->
 
+
+
     <!--======= footer Section Here ======= -->
-    <footer id="footer">
+    <footer id="footer" class="home_page_footer about_footer"
+        style="background-image: url(./assets/images/footer_bg_1.jpg);">
         <div class="container section_content">
             <div class="footer_upper wedget row align-items-center">
-                <div class="upper_item  wedget_1 col-lg-5 text-start">
-                    <ul class="d-flex icon_box_24">
+                <div class="upper_item  wedget_1 col-lg-5 col-md-5 col-12 text-start">
+                    <ul class="d-flex icon_box_24 justify-content-md-start justify-content-center">
                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
                         <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                         <li><a href="#"><i class='bx bxl-pinterest-alt'></i></a></li>
                     </ul>
                 </div>
-                <div class="upper_item wedget_2 col-lg-2 text-center"><img src="./assets/images/Logo_light.svg" alt=""
-                        class="img-fluid"></div>
-                <div class="upper_item wedget_3 col-lg-5 text-end"><img src="./assets/images/payment method.svg" alt=""
-                        class="img-fluid"></div>
+                <div class="upper_item wedget_2 col-lg-2 col-md-2 col-12 text-center"><img
+                        src="./assets/images/Logo_light.svg" alt="" class="img-fluid"></div>
+                <div class="upper_item wedget_3 col-lg-5 col-md-5 col-12 text-md-end text-center "><img
+                        src="./assets/images/payment method.svg" alt="" class="img-fluid"></div>
             </div>
-            <div class="footer_lower wedget row g-0 align-items-start">
-                <div class="lower_item wedget_4 col-lg-2">
+            <div class="footer_lower wedget row g-0 align-items-start justify-content-between">
+                <div class="lower_item wedget_4  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>My Account</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">My Account</a></li>
@@ -278,7 +307,7 @@
                         <li><a href="#">New Products</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_5 col-lg-2">
+                <div class="lower_item wedget_5  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>Support</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">Help</a></li>
@@ -288,7 +317,7 @@
                         <li><a href="#">Store Locations</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_6 col-lg-2">
+                <div class="lower_item wedget_6  col-xl-2 col-md-4 col-sm-5 col-12">
                     <h4>Opening Time</h4>
                     <ul>
                         <li class="d-flex align-items-center justify-content-between"><span class="col-6"> <b> Mon -
@@ -303,7 +332,7 @@
                             </span><span class="col-6"> Closed</span></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_7 col-lg-3">
+                <div class="lower_item wedget_7  col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>Contact Us</h4>
                     <ul class="icon_box_24">
                         <li class="d-flex align-items-start"><i class='bx bxs-map'></i>
@@ -321,7 +350,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_8 col-lg-3">
+                <div class="lower_item wedget_8 col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>News Letter</h4>
                     <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
                     <div class="form_box">

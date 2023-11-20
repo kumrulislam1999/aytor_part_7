@@ -41,7 +41,7 @@
 <body>
     <!--======= Header Section Here ======= -->
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a href="" class="navbar-brand"><img src="./assets/images/Logo.png" alt="" class="img-fluid"></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_navbar"> <span
@@ -51,21 +51,60 @@
                         <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+                <ul class="mega_menu">
+                    <li><a href="shop.html">Pagelist 1</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./index.html">Home</a></li>
+                            <li class="nav_item"><a href="./about.html">About</a></li>
+                            <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 2</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                            <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                            <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                            <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 3</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                            <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                            <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                    Sidebar</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 4</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                            <li class="nav_item"><a href="./404.html">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -92,7 +131,7 @@
         <section id="shop_details_page">
             <div class="container section_content">
                 <div class="row">
-                    <div class="shop_details_item col-lg-6 ">
+                    <div class="shop_details_item col-lg-6 col-md-612">
                         <div class="shop_details_sliding_box">
                             <img src="./assets/images/shop-details-1.jpg" alt="" class="img-fluid">
                             <img src="./assets/images/shop-details-2.jpg" alt="" class="img-fluid">
@@ -109,7 +148,7 @@
                             <img src="./assets/images/shop_details_p-d-t-6.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="shop_details_item col-lg-6">
+                    <div class="shop_details_item col-lg-6 col-md-12">
                         <div class="top_part">
                             <h3>Leather Jackets</h3>
                             <p class="product_rating_box">5.00 <span class="icon_box_24"><i class='bx bxs-star'></i><i
@@ -147,21 +186,23 @@
                                 </tr>
                             </table>
                             <label for=""> <b> Quantity</b> </label>
-                            <div class="action d-flex">
-                                <div class="Quantity d-flex text-center align-items-center">
+                            <div class="action d-flex flex-wrap align-items-center">
+                                <div class="Quantity d-flex  text-start text-sm-center align-items-center">
                                     <button><i class='bx bx-minus icon_50 bg_light_white'></i></button>
                                     <input class="text-center bg_light_white icon_50" type="number" value="1" min="1"
                                         max="99">
                                     <button><i class='bx bx-plus icon_50 bg_light_white'></i></button>
                                 </div>
-                                <a href="./shop_cart.html" class="sec_btn_lg"><i class='bx bxs-cart'></i> Add To
-                                    Cart</a>
-                                <a href="./wishlist.html"><i class='bx bxs-heart icon_50 bg_dark'></i></a>
-                                <a href="./compare.html"><i class='bx bx-signal-3 icon_50 bg_dark'></i></a>
+                                <div class="d-flex align-items-center">
+                                    <a href="./shop_cart.html" class="sec_btn_sm"><i class='bx bxs-cart'></i>
+                                        <span>Add To Cart</span> </a>
+                                    <a href="./wishlist.html"><i class='bx bxs-heart icon_50 bg_dark'></i></a>
+                                    <a href="./compare.html"><i class='bx bx-signal-3 icon_50 bg_dark'></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="bottom_part row justify-content-between">
-                            <table class="col-lg-6">
+                            <table class="col-sm-7">
                                 <tr>
                                     <th>SKU:</th>
                                     <td>WO243</td>
@@ -175,7 +216,8 @@
                                     <td>Dress. T-shirt, Mini Scut</td>
                                 </tr>
                             </table>
-                            <ul class="icon_box_24 col-lg-6 ms-auto d-flex text-end justify-content-end">
+                            <ul
+                                class="icon_box_24 col-sm-5 ms-auto d-flex text-end justify-content-start justify-content-sm-end">
                                 <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                                 <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
                                 <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
@@ -194,10 +236,24 @@
         <div id="shop_details_overview">
             <div class="container section_content">
                 <div class="row align-items-center justify-content-center">
-                    <div class="overview_top_item col-lg-8 row">
-                        <div class="overview_inner_item overview_inner_item_1 show col-lg-4">Product description</div>
-                        <div class="overview_inner_item overview_inner_item_2 col-lg-4">Customer Review (1)</div>
-                        <div class="overview_inner_item overview_inner_item_3 col-lg-4">Additional Information</div>
+                    <div class="overview_top_item col-sm-10 row justify-content-center">
+                        <div
+                            class="overview_inner_item overview_inner_item_1 show col-xl-4 col-lg-4 col-md-4 col-sm-6 col-8">
+                            <a href="#"> Product
+                                description</a>
+                        </div>
+                        <div
+                            class="overview_inner_item overview_inner_item_2 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-8">
+                            <a href="#">
+                                Customer
+                                Review (1)</a>
+                        </div>
+                        <div
+                            class="overview_inner_item overview_inner_item_3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-8">
+                            <a href="#">
+                                Additional
+                                Information</a>
+                        </div>
                     </div>
                     <div class="product_description_box show">
                         <P>Conveniently build adaptive users with front-end human capital. Appropriately unleash team
@@ -314,8 +370,8 @@
         <section id="shop_details_related">
             <div class="container section_content">
                 <h3 class="text-center">Releted Products</h3>
-                <div class="row shop_related_sliding_box">
-                    <div class="related_item product_box single col-lg-3">
+                <div class="shop_related_sliding_box">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_1.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -338,7 +394,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_2.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -361,7 +417,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_3.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -384,7 +440,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_4.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -407,7 +463,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_5.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -430,7 +486,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_6.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -453,7 +509,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_7.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -476,7 +532,7 @@
                             <p>$180.85</p>
                         </div>
                     </div>
-                    <div class="related_item product_box single col-lg-3">
+                    <div class="related_item product_box single">
                         <div class="product_img_box overflow-hidden">
                             <img src="./assets/images/shop_page_product_2_8.jpg" alt="" class="img-fluid hoverlay_img">
                             <ul class="icon_box_36">
@@ -534,24 +590,25 @@
     <!--============== End About_page_Main Section Here ============== -->
 
     <!--======= footer Section Here ======= -->
-    <footer id="footer">
+    <footer id="footer" class="home_page_footer about_footer"
+        style="background-image: url(./assets/images/footer_bg_1.jpg);">
         <div class="container section_content">
             <div class="footer_upper wedget row align-items-center">
-                <div class="upper_item  wedget_1 col-lg-5 text-start">
-                    <ul class="d-flex icon_box_24">
+                <div class="upper_item  wedget_1 col-lg-5 col-md-5 col-12 text-start">
+                    <ul class="d-flex icon_box_24 justify-content-md-start justify-content-center">
                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
                         <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                         <li><a href="#"><i class='bx bxl-pinterest-alt'></i></a></li>
                     </ul>
                 </div>
-                <div class="upper_item wedget_2 col-lg-2 text-center"><img src="./assets/images/Logo_light.svg" alt=""
-                        class="img-fluid"></div>
-                <div class="upper_item wedget_3 col-lg-5 text-end"><img src="./assets/images/payment method.svg" alt=""
-                        class="img-fluid"></div>
+                <div class="upper_item wedget_2 col-lg-2 col-md-2 col-12 text-center"><img
+                        src="./assets/images/Logo_light.svg" alt="" class="img-fluid"></div>
+                <div class="upper_item wedget_3 col-lg-5 col-md-5 col-12 text-md-end text-center "><img
+                        src="./assets/images/payment method.svg" alt="" class="img-fluid"></div>
             </div>
-            <div class="footer_lower wedget row g-0 align-items-start">
-                <div class="lower_item wedget_4 col-lg-2">
+            <div class="footer_lower wedget row g-0 align-items-start justify-content-between">
+                <div class="lower_item wedget_4  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>My Account</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">My Account</a></li>
@@ -561,7 +618,7 @@
                         <li><a href="#">New Products</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_5 col-lg-2">
+                <div class="lower_item wedget_5  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>Support</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">Help</a></li>
@@ -571,7 +628,7 @@
                         <li><a href="#">Store Locations</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_6 col-lg-2">
+                <div class="lower_item wedget_6  col-xl-2 col-md-4 col-sm-5 col-12">
                     <h4>Opening Time</h4>
                     <ul>
                         <li class="d-flex align-items-center justify-content-between"><span class="col-6"> <b> Mon -
@@ -586,7 +643,7 @@
                             </span><span class="col-6"> Closed</span></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_7 col-lg-3">
+                <div class="lower_item wedget_7  col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>Contact Us</h4>
                     <ul class="icon_box_24">
                         <li class="d-flex align-items-start"><i class='bx bxs-map'></i>
@@ -604,7 +661,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_8 col-lg-3">
+                <div class="lower_item wedget_8 col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>News Letter</h4>
                     <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
                     <div class="form_box">

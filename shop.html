@@ -41,31 +41,70 @@
 <body>
     <!--======= Header Section Here ======= -->
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a href="" class="navbar-brand"><img src="./assets/images/Logo.png" alt="" class="img-fluid"></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_navbar"> <span
                         class="navbar-toggler-icon"></span></button>
                 <div class="navbar-collapse collapse mx-auto" id="main_navbar">
                     <ul class="navbar-nav text-end mx-auto">
-                        <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./shop.html" class="nav-link active">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+                <ul class="mega_menu">
+                    <li><a href="shop.html">Pagelist 1</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./index.html">Home</a></li>
+                            <li class="nav_item"><a href="./about.html">About</a></li>
+                            <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 2</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                            <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                            <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                            <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 3</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                            <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                            <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                    Sidebar</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 4</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                            <li class="nav_item"><a href="./404.html">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -91,12 +130,12 @@
         <section id="shop_page_product">
             <div class="container section_content">
                 <div class="row shopping_headbar align-items-center">
-                    <div class="shopping_headbar_item col-lg-2 text-start"><i class='bx bx-menu menu_line'></i><i
-                            class='bx bxs-grid menu_grid show'></i></div>
-                    <div class="shopping_headbar_item col-lg-5 text-start">
+                    <div class="shopping_headbar_item col-md-2 col-sm-2 col-12 text-start"><i
+                            class='bx bx-menu menu_line'></i><i class='bx bxs-grid menu_grid show'></i></div>
+                    <div class="shopping_headbar_item col-md-5 col-sm-5 col-12 text-start">
                         <p>Showing 12 of 16 Post</p>
                     </div>
-                    <div class="shopping_headbar_item col-lg-5 text-end">
+                    <div class="shopping_headbar_item col-md-5 col-sm-5 col-12 text-sm-end text-start">
                         <select name="" id="">
                             <option value="">Sort By Latest</option>
                             <option value="">Sort By Oldest</option>
@@ -107,7 +146,7 @@
                 </div>
                 <div class="shop_page_menu_line show">
                     <div class="row shopping_box align-items-center justify-content-between">
-                        <div class="product_item product_box single col-lg-3">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_1.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -131,7 +170,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_2.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -155,7 +194,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_3.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -179,7 +218,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_4.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -203,7 +242,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_5.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -227,7 +266,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_6.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -251,7 +290,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_7.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -275,7 +314,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_8.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -299,7 +338,7 @@
                                 <p>$180.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_5.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -323,9 +362,9 @@
                                 <p>$120.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
-                                <img src="./assets/images/shop_page_product_2_10.jpg" alt=""
+                                <img src="./assets/images/shop_page_product_2_8.jpg" alt=""
                                     class="img-fluid hoverlay_img">
                                 <ul class="icon_box_36">
                                     <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
@@ -347,9 +386,9 @@
                                 <p>$100.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
-                                <img src="./assets/images/shop_page_product_2_11.jpg" alt=""
+                                <img src="./assets/images/shop_page_product_2_7.jpg" alt=""
                                     class="img-fluid hoverlay_img">
                                 <ul class="icon_box_36">
                                     <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
@@ -371,7 +410,7 @@
                                 <p>$120.85</p>
                             </div>
                         </div>
-                        <div class="product_item product_box single col-lg-3 ">
+                        <div class="product_item product_box single col-xl-3 col-lg-4 col-sm-6 col-12">
                             <div class="product_img_box overflow-hidden">
                                 <img src="./assets/images/shop_page_product_2_12.jpg" alt=""
                                     class="img-fluid hoverlay_img">
@@ -862,24 +901,25 @@
     <!--============== Start Shop_page_Main Section Here ============== -->
 
     <!--======= footer Section Here ======= -->
-    <footer id="footer">
+    <footer id="footer" class="home_page_footer about_footer"
+        style="background-image: url(./assets/images/footer_bg_1.jpg);">
         <div class="container section_content">
             <div class="footer_upper wedget row align-items-center">
-                <div class="upper_item  wedget_1 col-lg-5 text-start">
-                    <ul class="d-flex icon_box_24">
+                <div class="upper_item  wedget_1 col-lg-5 col-md-5 col-12 text-start">
+                    <ul class="d-flex icon_box_24 justify-content-md-start justify-content-center">
                         <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
                         <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                         <li><a href="#"><i class='bx bxl-pinterest-alt'></i></a></li>
                     </ul>
                 </div>
-                <div class="upper_item wedget_2 col-lg-2 text-center"><img src="./assets/images/Logo_light.svg" alt=""
-                        class="img-fluid"></div>
-                <div class="upper_item wedget_3 col-lg-5 text-end"><img src="./assets/images/payment method.svg" alt=""
-                        class="img-fluid"></div>
+                <div class="upper_item wedget_2 col-lg-2 col-md-2 col-12 text-center"><img
+                        src="./assets/images/Logo_light.svg" alt="" class="img-fluid"></div>
+                <div class="upper_item wedget_3 col-lg-5 col-md-5 col-12 text-md-end text-center "><img
+                        src="./assets/images/payment method.svg" alt="" class="img-fluid"></div>
             </div>
-            <div class="footer_lower wedget row g-0 align-items-start">
-                <div class="lower_item wedget_4 col-lg-2">
+            <div class="footer_lower wedget row g-0 align-items-start justify-content-between">
+                <div class="lower_item wedget_4  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>My Account</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">My Account</a></li>
@@ -889,7 +929,7 @@
                         <li><a href="#">New Products</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_5 col-lg-2">
+                <div class="lower_item wedget_5  col-xl-2 col-md-4 col-sm-auto col-12">
                     <h4>Support</h4>
                     <ul class="footer_link_box">
                         <li><a href="#">Help</a></li>
@@ -899,7 +939,7 @@
                         <li><a href="#">Store Locations</a></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_6 col-lg-2">
+                <div class="lower_item wedget_6  col-xl-2 col-md-4 col-sm-5 col-12">
                     <h4>Opening Time</h4>
                     <ul>
                         <li class="d-flex align-items-center justify-content-between"><span class="col-6"> <b> Mon -
@@ -914,7 +954,7 @@
                             </span><span class="col-6"> Closed</span></li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_7 col-lg-3">
+                <div class="lower_item wedget_7  col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>Contact Us</h4>
                     <ul class="icon_box_24">
                         <li class="d-flex align-items-start"><i class='bx bxs-map'></i>
@@ -932,7 +972,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lower_item wedget_8 col-lg-3">
+                <div class="lower_item wedget_8 col-xl-3 col-md-6 col-sm-6 col-12">
                     <h4>News Letter</h4>
                     <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
                     <div class="form_box">

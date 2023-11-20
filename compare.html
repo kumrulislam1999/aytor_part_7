@@ -41,7 +41,7 @@
 <body>
     <!--======= Header Section Here ======= -->
     <header id="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a href="" class="navbar-brand"><img src="./assets/images/Logo.png" alt="" class="img-fluid"></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_navbar"> <span
@@ -51,21 +51,60 @@
                         <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+                <ul class="mega_menu">
+                    <li><a href="shop.html">Pagelist 1</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./index.html">Home</a></li>
+                            <li class="nav_item"><a href="./about.html">About</a></li>
+                            <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 2</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                            <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                            <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                            <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 3</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                            <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                            <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                    Sidebar</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 4</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                            <li class="nav_item"><a href="./404.html">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -93,150 +132,97 @@
         <!-- ======== Start Shop_Cart_page Section Here ======== -->
         <section id="shop_compare_page">
             <div class="container section_content text-center">
+                <div class=" text-start w-100">
+                    <form action="" class="woocommerce-message d-flex align-items-center justify-content-between"><input
+                            type="search" class="w-100" placeholder="Search Product"><button type="button"><i
+                                class='bx bx-search'></i></button>
+                    </form>
+                </div>
+                <div class="table-responsive">
+                    <table class="text-center">
+                        <tr class="icon_box_36 remove_box">
+                            <th class=" text-start">Remove</th>
+                            <td class=""><i class='bx bxs-trash-alt col-lg-3'></i></td>
+                            <td class=""><i class='bx bxs-trash-alt col-lg-3'></i></td>
+                            <td class=""><i class='bx bxs-trash-alt col-lg-3'></i></td>
+                            <td class=""><i class='bx bxs-trash-alt col-lg-3'></i></td>
+                        </tr>
+                        <tr class=" product_name">
+                            <th class=" text-start">Product</th>
 
-                <table class="w-100">
-                    <tr class="w-100">
-                        <td class=" text-start">
-                            <form action="" class=" d-flex"><input type="search" class="form-control"
-                                    placeholder="Search Product">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr class="icon_box_36 remove_box row justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Remove</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3"><i class='bx bxs-trash-alt col-lg-3'></i></td>
-                                    <td class="col-lg-3"><i class='bx bxs-trash-alt col-lg-3'></i></td>
-                                    <td class="col-lg-3"><i class='bx bxs-trash-alt col-lg-3'></i></td>
-                                    <td class="col-lg-3"><i class='bx bxs-trash-alt col-lg-3'></i></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="row product_name justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Product</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3">
-                                        <img src="./assets/images/cart-img-1-1.jpg" class="img-fluid" alt="">
-                                        <h6>Jacket Hoodie Sweater</h6>
-                                    </td>
-                                    <td class="col-lg-3">
-                                        <img src="./assets/images/cart-img-1-2.jpg" class="img-fluid" alt="">
-                                        <h6>Bomber Jacket</h6>
-                                    </td>
-                                    <td class="col-lg-3">
-                                        <img src="./assets/images/cart-img-1-3.jpg" class="img-fluid" alt="">
-                                        <h6>Hoodie T-Shirt</h6>
-                                    </td>
-                                    <td class="col-lg-3">
-                                        <img src="./assets/images/cart-img-1-4.jpg" class="img-fluid" alt="">
-                                        <h6>Men Long Shirt</h6>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="row description_box justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Description</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3">Assertively incentivize multimedia based collaboration and
-                                        idea-share</td>
-                                    <td class="col-lg-3">Assertively incentivize multimedia based collaboration and
-                                        idea-share</td>
-                                    <td class="col-lg-3">Assertively incentivize multimedia based collaboration and
-                                        idea-share</td>
-                                    <td class="col-lg-3">Assertively incentivize multimedia based collaboration and
-                                        idea-share</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="row price_box bg_white_dark padding_12 justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Price</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3">$130.00</td>
-                                    <td class="col-lg-3">$220.00</td>
-                                    <td class="col-lg-3">$100.00</td>
-                                    <td class="col-lg-3">$80.00</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="row color_box padding_12 justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Color</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3">Red</td>
-                                    <td class="col-lg-3">Black</td>
-                                    <td class="col-lg-3">Gray</td>
-                                    <td class="col-lg-3">Blue-Brown</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="row ratting_box bg_white_dark padding_12 justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Rattings</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3 icon_box_24"><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
-                                    </td>
-                                    <td class="col-lg-3 icon_box_24"><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
-                                    </td>
-                                    <td class="col-lg-3 icon_box_24"><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
-                                    </td>
-                                    <td class="col-lg-3 icon_box_24"><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                            class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-                    </tr>
-                    <tr class="row stock_box padding_12 justify-content-between align-items-center">
-                        <th class="col-lg-2 text-start">Stock</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3"><i class='bx bx-check'></i> In Stock</td>
-                                    <td class="col-lg-3"><i class='bx bx-check'></i> In Stock</td>
-                                    <td class="col-lg-3"><i class='bx bx-check'></i> In Stock</td>
-                                    <td class="col-lg-3"><i class='bx bx-check'></i> In Stock</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr
-                        class="row addcart_box bg_white_dark padding_12 justify-content-between text-center align-items-center">
-                        <th class="col-lg-2 text-start">Add To Cart</th>
-                        <td class="col-lg-10">
-                            <table class="w-100">
-                                <tr class="row align-items-center justify-content-between">
-                                    <td class="col-lg-3"> <button class="sec_btn_lg"> Add to Cart </button></td>
-                                    <td class="col-lg-3"> <button class="sec_btn_lg"> Add to Cart </button></td>
-                                    <td class="col-lg-3"> <button class="sec_btn_lg"> Add to Cart </button></td>
-                                    <td class="col-lg-3"> <button class="sec_btn_lg"> Add to Cart </button></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                            <td class="">
+                                <img src="./assets/images/cart-img-1-1.jpg" class="img-fluid" alt="">
+                                <h6>Jacket Hoodie Sweater</h6>
+                            </td>
+                            <td class="">
+                                <img src="./assets/images/cart-img-1-2.jpg" class="img-fluid" alt="">
+                                <h6>Bomber Jacket</h6>
+                            </td>
+                            <td class="">
+                                <img src="./assets/images/cart-img-1-3.jpg" class="img-fluid" alt="">
+                                <h6>Hoodie T-Shirt</h6>
+                            </td>
+                            <td class="">
+                                <img src="./assets/images/cart-img-1-4.jpg" class="img-fluid" alt="">
+                                <h6>Men Long Shirt</h6>
+                            </td>
+                        </tr>
+                        <tr class="description_box">
+                            <th class=" text-start">Description</th>
+                            <td class="">Assertively incentivize multimedia based collaboration and
+                                idea-share</td>
+                            <td class="">Assertively incentivize multimedia based collaboration and
+                                idea-share</td>
+                            <td class="">Assertively incentivize multimedia based collaboration and
+                                idea-share</td>
+                            <td class="">Assertively incentivize multimedia based collaboration and
+                                idea-share</td>
+                        </tr>
+                        <tr class="price_box bg_white_dark ">
+                            <th class=" text-start">Price</th>
+                            <td class="">$130.00</td>
+                            <td class="">$220.00</td>
+                            <td class="">$100.00</td>
+                            <td class="">$80.00</td>
+                        </tr>
+                        <tr class="color_box">
+                            <th class=" text-start">Color</th>
+                            <td class="">Red</td>
+                            <td class="">Black</td>
+                            <td class="">Gray</td>
+                            <td class="">Blue-Brown</td>
+                        </tr>
+                        <tr class="ratting_box bg_white_dark">
+                            <th class="text-start">Rattings</th>
+                            <td class=" icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
+                            </td>
+                            <td class=" icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
+                            </td>
+                            <td class=" icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
+                            </td>
+                            <td class=" icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i> (5)
+                            </td>
+                        </tr>
+                        <tr class="stock_box">
+                            <th class="text-start">Stock</th>
+                            <td class=""><i class='bx bx-check'></i> In Stock</td>
+                            <td class=""><i class='bx bx-check'></i> In Stock</td>
+                            <td class=""><i class='bx bx-check'></i> In Stock</td>
+                            <td class=""><i class='bx bx-check'></i> In Stock</td>
+                        </tr>
+                        <tr class="addcart_box bg_white_dark text-center">
+                            <th class=" text-start">Add To Cart</th>
+                            <td class=""> <a href="./shop_cart.html" class="sec_btn_lg"> Add to Cart </a></td>
+                            <td class=""> <a href="./shop_cart.html" class="sec_btn_lg"> Add to Cart </a></td>
+                            <td class=""> <a href="./shop_cart.html" class="sec_btn_lg"> Add to Cart </a></td>
+                            <td class=""> <a href="./shop_cart.html" class="sec_btn_lg"> Add to Cart </a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
         <!-- ======== End Shop_Cart_page Section Here ======== -->

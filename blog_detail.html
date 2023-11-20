@@ -51,21 +51,60 @@
                         <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+                <ul class="mega_menu">
+                    <li><a href="shop.html">Pagelist 1</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./index.html">Home</a></li>
+                            <li class="nav_item"><a href="./about.html">About</a></li>
+                            <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 2</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                            <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                            <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                            <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 3</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                            <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                            <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                            <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                    Sidebar</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="shop.html">Pagelist 4</a>
+                        <ul class="nav-menu">
+                            <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                            <li class="nav_item"><a href="./404.html">Error</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -98,7 +137,7 @@
                                 <img src="./assets/images/blog-s-2-1.jpg" alt="" class="img-fluid slide_item">
                             </div>
                             <div class="blog_classic_info_box">
-                                <div class="date_box d-flex align-items-center">
+                                <div class="date_box d-flex flex-wrap align-items-center">
                                     <p><i class='bx bxs-user'></i> Aytor Studio</p>
                                     <p><i class='bx bx-show'></i> 332 Views</p>
                                     <p><i class='bx bx-message-rounded-dots'></i> 17 comments</p>
@@ -180,7 +219,9 @@
                                                 alt="" class="img-fluid">
                                         </div>
                                         <div class="comment_detail_box">
-                                            <h5>Aytor Studio</h5>
+                                            <a class="text-start" href="./blog_classic_slidbar.html">
+                                                <h5>Aytor Studio</h5>
+                                            </a>
                                             <p class="author">author</p>
                                             <ul class="icon_box_24 d-flex align-items-center">
                                                 <li> <a href="#"><i class='bx bxl-facebook'></i></a></li>
@@ -260,7 +301,7 @@
                                                     class="w-100"></div>
                                         </div>
                                         <input type="text" placeholder="Your Website Name" class="w-100">
-                                        <textarea name="" id="" cols="30" rows="10" class="w-100"
+                                        <textarea name="" id="" cols="10" rows="5" class="w-100"
                                             placeholder="Your Comment Here..........."></textarea>
                                         <button type="submit" class="sec_btn_lg">Post a Comment</button>
                                     </form>

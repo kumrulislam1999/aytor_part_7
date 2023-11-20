@@ -51,21 +51,60 @@
                         <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
                         <li class="nav-item dropdown"><a href="./about.html" class="nav-link">About</a></li>
-                        <li class="nav-item dropdown"><a href="#feature" class="nav-link">Features</a></li>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="multiple_nav">Pages</a></li>
                         <li class="nav-item dropdown"><a href="./blog.html" class="nav-link">Blogs</a> </li>
                         <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     </ul>
                     <ul class="ecommerce_cart icon_box_24 d-flex justify-content-end ">
                         <li class="cart_item text-end"><a href="#" class="header_search_box"><i
                                     class='bx bx-search-alt-2'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bxs-user'></i></a></li>
-                        <li class="cart_item text-end"><a href="#"><i class='bx bx-heart'></i></a></li>
+                        <li class="cart_item text-end"><a href="./shop.html"><i class='bx bxs-user'></i></a></li>
+                        <li class="cart_item text-end"><a href="./wishlist.html"><i class='bx bx-heart'></i></a></li>
                         <li class="cart_item text-end"><a href="#" class="header_shopping_cart"><i
                                     class='bx bx-shopping-bag position-relative'><span>0</span></i> </a></li>
                     </ul>
                 </div>
-
             </div>
+            <!-- ====== Start Multiple nav_bar Here ====== -->
+
+            <!-- 
+            <ul class="mega_menu">
+                <li><a href="shop.html">Pagelist 1</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./index.html">Home</a></li>
+                        <li class="nav_item"><a href="./about.html">About</a></li>
+                        <li class="nav_item"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 2</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./shop.html">Shop</a></li>
+                        <li class="nav_item"><a href="./shop_detail.html">Shop Details</a></li>
+                        <li class="nav_item"><a href="./shop_cart.html">Shop Cart</a></li>
+                        <li class="nav_item"><a href="./shop_product.html">Shop Product</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 3</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./blog.html">Blog</a></li>
+                        <li class="nav_item"><a href="./blog_classic.html">Blog Classic</a></li>
+                        <li class="nav_item"><a href="./blog_detail.html">Blog Details</a></li>
+                        <li class="nav_item"><a href="./blog_classic_slidbar.html">Blog Classic
+                                Sidebar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="shop.html">Pagelist 4</a>
+                    <ul class="nav-menu">
+                        <li class="nav_item"><a href="./wishlist.html">Wishlist</a></li>
+                        <li class="nav_item"><a href="./404.html">Error</a></li>
+                    </ul>
+                </li>
+            </ul>-->
+
+            <!-- ====== End Multiple nav_bar Here ====== -->
         </nav>
     </header>
     <!--======= Header Section Here ======= -->
@@ -117,18 +156,19 @@
         <section id="home_page_mini_bannar">
             <div class="home_page_mini_bannar">
                 <div class="container section_content">
-                    <div class="row  g-0">
-                        <div class="mini_bannar_left col-lg-5 col-md-5 col-12 row g-0">
-                            <div class="mini_bannar_item col-12">
-                                <img src="./assets/images/home_mini_bannar_2_1.jpg" alt="" class="img-fluid h-100">
+                    <div class="row align-items-center justify-content-between">
+                        <div
+                            class="mini_bannar_left col-lg-5 col-md-5 col-12 d-flex flex-column  align-content-between">
+                            <div class="mini_bannar_item">
+                                <img src="./assets/images/home_mini_bannar_2_1.jpg" alt="" class="img-fluid">
                                 <div class="overlay"></div>
                                 <div class="overlay_info_box text-center">
                                     <h4>Beauty Cream</h4>
                                     <a href="#" class="sec_btn_sm">Know More <i class='bx bx-right-arrow-alt'></i></a>
                                 </div>
                             </div>
-                            <div class="mini_bannar_item col-12">
-                                <img src="./assets/images/home_mini_bannar_2_2.jpg" alt="" class="img-fluid h-100">
+                            <div class="mini_bannar_item">
+                                <img src="./assets/images/home_mini_bannar_2_2.jpg" alt="" class="img-fluid">
                                 <div class="overlay"></div>
                                 <div class="overlay_info_box text-center">
                                     <h4>Natural Cream</h4>
@@ -137,7 +177,7 @@
                             </div>
                         </div>
                         <div class="mini_bannar_right col-lg-7 col-md-7 col-12 mini_bannar_item">
-                            <img src="./assets/images/home_mini_bannar_2_3.jpg" alt="" class="img-fluid h-100">
+                            <img src="./assets/images/home_mini_bannar_2_3.jpg" alt="" class="img-fluid">
                             <div class="overlay"></div>
                             <div class="overlay_info_box text-center">
                                 <h4>Face Cream</h4>
@@ -162,21 +202,23 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-1.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$180.85 <s>$350.99</s></p>
-                            <h6>Lotion Shower Gel</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Lotion Shower Gel</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                     <div class="arrival_sliding_item product_box">
@@ -185,23 +227,26 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-2.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
-
                             <p>$190.85</p>
-                            <h6>Argan Cream Butter</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Argan Cream Butter</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
                         </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
+
+                        </div>
+
                     </div>
                     <div class="arrival_sliding_item product_box">
                         <div class="product_img_box">
@@ -209,44 +254,48 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-3.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$160.85</p>
-                            <h6>Compact Face Powder</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Compact Face Powder</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
                         </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
+                        </div>
                     </div>
-                    <div class="arrival_sliding_item product_box ">
+                    <div class="arrival_sliding_item product_box">
                         <div class="product_img_box">
                             <img src="./assets/images/home_page_arrival_product_img-2-4h.jpg" alt=""
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-4.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$170.85</p>
-                            <h6>Manicure Gel Nails</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Manicure Gel Nails</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                     <div class="arrival_sliding_item product_box">
@@ -255,21 +304,23 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-5.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$120.85</p>
-                            <h6>Perfumes's Orlane</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Perfumes's Orlane</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                     <div class="arrival_sliding_item product_box">
@@ -278,21 +329,23 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-6.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$100.85</p>
-                            <h6>Natural Skin Cleanser</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Natural Skin Cleanser</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                     <div class="arrival_sliding_item product_box">
@@ -301,21 +354,23 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-7.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$120.85</p>
-                            <h6>Oil Hair Conditioner</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Oil Hair Conditioner</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                     <div class="arrival_sliding_item product_box">
@@ -324,21 +379,23 @@
                                 class="img-fluid hoverlay_img">
                             <img src="./assets/images/home_page_arrival_product_img-2-8.jpg" alt=""
                                 class="img-fluid hidden_img">
-                            <ul class="icon_box_36">
-                                <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-heart'></i></a></li>
-                                <li><a href="#"><i class='bx bxs-show'></i></a></li>
-                                <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
-                            </ul>
-                            <div class="shape_box">
-                                <p>Sale</p>
-                            </div>
                         </div>
                         <div class="product_info_box">
                             <p>$100.85</p>
-                            <h6>Lip Balm Oriflame</h6>
+                            <a href="./shop_detail.html">
+                                <h6>Lip Balm Oriflame</h6>
+                            </a>
                             <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                                     class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                        </div>
+                        <ul class="icon_box_36">
+                            <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-heart'></i></a></li>
+                            <li><a href="#"><i class='bx bxs-show'></i></a></li>
+                            <li><a href="#"><i class='bx bx-signal-3'></i></a></li>
+                        </ul>
+                        <div class="shape_box">
+                            <p>Sale</p>
                         </div>
                     </div>
                 </div>
@@ -367,12 +424,23 @@
             <div class="container section_content text-center position-relative">
                 <h3>Best Seller Products</h3>
                 <div class="seller_sliding_box row text-center justify-content-center">
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-1h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-1.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-1h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-1.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$180.85 <s>$350.99</s></p>
+                                <a href="./shop_detail.html">
+                                    <h6>Lotion Shower Gel</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -382,20 +450,25 @@
                             <div class="shape_box">
                                 <p>Sale</p>
                             </div>
-                        </div>
-                        <div class="product_info_box">
-                            <p>$180.85 <s>$350.99</s></p>
-                            <h6>Lotion Shower Gel</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
                         </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-2h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-2.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-2h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-2.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$190.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Argan Cream Butter</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -404,22 +477,27 @@
                             </ul>
                             <div class="shape_box">
                                 <p>Sale</p>
-                            </div>
-                        </div>
-                        <div class="product_info_box">
 
-                            <p>$190.85</p>
-                            <h6>Argan Cream Butter</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-3h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-3.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-3h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-3.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$160.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Compact Face Powder</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -430,19 +508,24 @@
                                 <p>Sale</p>
                             </div>
                         </div>
-                        <div class="product_info_box">
-                            <p>$160.85</p>
-                            <h6>Compact Face Powder</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
-                        </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-4h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-4.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-4h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-4.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$170.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Manicure Gel Nails</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -453,19 +536,24 @@
                                 <p>Sale</p>
                             </div>
                         </div>
-                        <div class="product_info_box">
-                            <p>$170.85</p>
-                            <h6>Manicure Gel Nails</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
-                        </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-5h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-5.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-5h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-5.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$120.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Perfumes's Orlane</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -476,19 +564,24 @@
                                 <p>Sale</p>
                             </div>
                         </div>
-                        <div class="product_info_box">
-                            <p>$120.85</p>
-                            <h6>Perfumes's Orlane</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
-                        </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-6h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-6.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-6h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-6.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$100.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Natural Skin Cleanser</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -499,19 +592,24 @@
                                 <p>Sale</p>
                             </div>
                         </div>
-                        <div class="product_info_box">
-                            <p>$100.85</p>
-                            <h6>Natural Skin Cleanser</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
-                        </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-7h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-7.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-7h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-7.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$120.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Oil Hair Conditioner</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -522,19 +620,24 @@
                                 <p>Sale</p>
                             </div>
                         </div>
-                        <div class="product_info_box">
-                            <p>$120.85</p>
-                            <h6>Oil Hair Conditioner</h6>
-                            <p class="icon_box_24 icon_light"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
-                        </div>
                     </div>
-                    <div class="seller_sliding_item product_box col-lg-3 col-md-4 col-sm-6">
-                        <div class="product_img_box">
-                            <img src="./assets/images/home_page_arrival_product_img-2-8h.jpg" alt=""
-                                class="img-fluid hoverlay_img">
-                            <img src="./assets/images/home_page_arrival_product_img-2-8.jpg" alt=""
-                                class="img-fluid hidden_img">
+                    <div class="seller_sliding_item col-lg-3 col-md-4 col-sm-6">
+                        <div class="product_box">
+                            <div class="product_img_box">
+                                <img src="./assets/images/home_page_arrival_product_img-2-8h.jpg" alt=""
+                                    class="img-fluid hoverlay_img">
+                                <img src="./assets/images/home_page_arrival_product_img-2-8.jpg" alt=""
+                                    class="img-fluid hidden_img">
+                            </div>
+                            <div class="product_info_box">
+                                <p>$100.85</p>
+                                <a href="./shop_detail.html">
+                                    <h6>Lip Balm Oriflame</h6>
+                                </a>
+                                <p class="icon_box_24"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </p>
+                            </div>
                             <ul class="icon_box_36">
                                 <li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
                                 <li><a href="#"><i class='bx bxs-heart'></i></a></li>
@@ -544,12 +647,6 @@
                             <div class="shape_box">
                                 <p>Sale</p>
                             </div>
-                        </div>
-                        <div class="product_info_box">
-                            <p>$100.85</p>
-                            <h6>Lip Balm Oriflame</h6>
-                            <p class="icon_box_24 text"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></p>
                         </div>
                     </div>
                 </div>
@@ -724,10 +821,10 @@
 
         <div id="home_page_essential">
             <div class="container position-relative">
-                <div class="section_content w-100">
-                    <div class="row w-100 align-items-center justify-content-center">
+                <div class="section_content d-flex justify-content-center w-100">
+                    <div class="row align-items-center justify-content-between w-100">
                         <div
-                            class="essential_item col-lg-3 col-sm-6 col-9 d-flex align-items-center justify-content-center justify-content-sm-start">
+                            class="essential_item g-0 col-lg-3 col-sm-6 col-11 d-flex align-items-center justify-content-center justify-content-sm-start">
                             <div class="essential_img_box">
                                 <img src="./assets/images/delivery-truck 1 (Traced).png" alt="" class="img-fluid">
                             </div>
@@ -737,7 +834,7 @@
                             </div>
                         </div>
                         <div
-                            class="essential_item col-lg-3 col-sm-6 col-9 d-flex align-items-center justify-content-center justify-content-sm-start">
+                            class="essential_item g-0 col-lg-3 col-sm-6 col-11 d-flex align-items-center justify-content-center justify-content-sm-start">
                             <div class="essential_img_box">
                                 <img src="./assets/images/credit-card 1 (Traced).png" alt="" class="img-fluid">
                             </div>
@@ -747,7 +844,7 @@
                             </div>
                         </div>
                         <div
-                            class="essential_item col-lg-3 col-sm- col-9 d-flex align-items-center justify-content-center justify-content-sm-start">
+                            class="essential_item g-0 col-lg-3 col-sm-6 col-11 d-flex align-items-center justify-content-lg-end">
                             <div class="essential_img_box">
                                 <img src="./assets/images/exchange 1 (Traced).png" alt="" class="img-fluid">
                             </div>
@@ -757,7 +854,7 @@
                             </div>
                         </div>
                         <div
-                            class="essential_item col-lg-3 col-sm-6 col-9 d-flex align-items-center justify-content-center justify-content-sm-start">
+                            class="essential_item g-0 col-lg-3 col-sm-6 col-11 d-flex align-items-center justify-content-lg-end">
                             <div class="essential_img_box">
                                 <img src="./assets/images/customer-service 1 (Traced).png" alt="" class="img-fluid">
                             </div>
@@ -873,7 +970,6 @@
 
 
     <!--======= Start All Extra Section Here ======= -->
-
     <!--======= Start Search PopUp Section Here ======= -->
 
     <section id="home_page_search_popup">
@@ -899,37 +995,37 @@
             <div class="section_content">
                 <h4>Shopping Cart</h4>
                 <div class="sample_box">
-                    <div class="shopping_cart_item row align-items-center justify-content-between">
-                        <img src="./assets/images/cart-img-1-1.webp" alt="" class="img-fluid col-lg-3 text-center">
-                        <div class="item_info_box col-lg-8 text-start">
+                    <div class="shopping_cart_item d-flex align-items-center justify-content-between">
+                        <img src="./assets/images/cart-img-1-1.webp" alt="" class="img-fluid text-center">
+                        <div class="item_info_box text-start">
                             <h5>Jacket Hoodie</h5>
                             <p>1 $40.00</p>
                         </div>
-                        <i class='bx bxs-trash-alt col-lg-1'></i>
+                        <i class='bx bxs-trash-alt '></i>
                     </div>
-                    <div class="shopping_cart_item row align-items-center justify-content-between">
-                        <img src="./assets/images/cart-img-1-2.jpg" alt="" class="img-fluid col-lg-3 text-center">
-                        <div class="item_info_box col-lg-8 text-start">
+                    <div class="shopping_cart_item d-flex align-items-center justify-content-between">
+                        <img src="./assets/images/cart-img-1-2.jpg" alt="" class="img-fluid text-center">
+                        <div class="item_info_box text-start">
                             <h5>Sports Shoes</h5>
                             <p>1 $99.00</p>
                         </div>
-                        <i class='bx bxs-trash-alt col-lg-1'></i>
+                        <i class='bx bxs-trash-alt'></i>
                     </div>
-                    <div class="shopping_cart_item row align-items-center justify-content-between">
-                        <img src="./assets/images/cart-img-1-3.jpg" alt="" class="img-fluid col-lg-3 text-center">
-                        <div class="item_info_box col-lg-8 text-start">
+                    <div class="shopping_cart_item d-flex align-items-center justify-content-between">
+                        <img src="./assets/images/cart-img-1-3.jpg" alt="" class="img-fluid text-center">
+                        <div class="item_info_box text-start">
                             <h5>Smart Watch</h5>
                             <p>1 $56.00</p>
                         </div>
-                        <i class='bx bxs-trash-alt col-lg-1'></i>
+                        <i class='bx bxs-trash-alt'></i>
                     </div>
-                    <div class="shopping_cart_item row align-items-center justify-content-between">
-                        <img src="./assets/images/cart-img-1-4.jpg" alt="" class="img-fluid col-lg-3 text-center">
-                        <div class="item_info_box col-lg-8 text-start">
+                    <div class="shopping_cart_item d-flex align-items-center justify-content-between">
+                        <img src="./assets/images/cart-img-1-4.jpg" alt="" class="img-fluid text-center">
+                        <div class="item_info_box text-start">
                             <h5>Bluetooth Speak</h5>
                             <p>1 $23.00</p>
                         </div>
-                        <i class='bx bxs-trash-alt col-lg-1'></i>
+                        <i class='bx bxs-trash-alt'></i>
                     </div>
                 </div>
                 <h4>Subtotal: <span>$318.00</span></h4>
@@ -942,6 +1038,29 @@
         <button class="btn_close"><i class='bx bx-x'></i></button>
     </section>
     <!--======= End Search OffCanvas Section Here ======= -->
+
+
+    <!--======= Start Preloader Section Here ======= -->
+    <section id="preloader_section">
+        <div class="preloader_box">
+            <h3>Newsletter</h3>
+            <p>Seamlessly disseminate interoperable collaboration and idea-sharing via magnetic catalysts for change.
+                Interactively
+                enable competitive customer service.</p>
+            <form action="">
+                <div class="form_box d-flex align-items-center"><input type="text" class="w-100"
+                        placeholder="Enter Keyword..."><button type="button" class="sec_btn_lg">Subscribe</button>
+                </div>
+                <div class="check_box">
+                    <input id="select" type="checkbox">
+                    <label for="select">Don’t Show This Popup Again</label>
+                </div>
+            </form>
+        </div>
+        <button class="close_btn"><i class='bx bx-x'></i></button>
+    </section>
+    <!--======= End Preloader Section Here ======= -->
+
 
     <!--======= End All Extra Section Here ======= -->
 

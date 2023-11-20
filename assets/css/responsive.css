@@ -1,4 +1,4 @@
-@media (max-width:1200px) {
+@media (min-width:1200px) {
 
     /* ====== Start Home Page RESPONSIVE Here ====== */
     #home_page_bannar .bannar_sliding_box .bannar_sliding_item {
@@ -14,6 +14,37 @@
 
 
     /* ====== End About Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop Page RESPONSIVE Here ======*/
+
+
+    #shop_page_product {
+        padding: 90px 0;
+    }
+
+    #shop_page_product .section_content .product_box.single {
+        margin: 30px 0;
+    }
+
+    /* ====== End Shop Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 80px 0;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
 
 }
 
@@ -286,6 +317,157 @@
     }
 
     /* ====== End Blog Page RESPONSIVE Here ====== */
+
+
+
+    /* ====== Start Shop Page RESPONSIVE Here ======*/
+
+
+    #shop_page_product {
+        padding: 80px 0;
+    }
+
+    #shop_page_product .section_content .product_box.single {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ====== End Shop Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 80px 0;
+    }
+
+    #shop_details_page .product_box.single .product_info_box .icon_box_24 i {
+        margin: 0px;
+        color: var(--primary_color_orange_light);
+        font-size: 16px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 80px 0;
+    }
+
+    #shop_details_related {
+        margin: 50px 0 60px;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 0 5px;
+
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 80px 0;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    #shop_details_overview .overview_inner_item a {
+        font-size: 18px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Checkout Page RESPONSIVE Here ======*/
+    #shop_checkout_page {
+        padding: 80px 0;
+    }
+
+    #shop_checkout_page .bill_info .coupon_box_left {
+        padding-bottom: 30px;
+    }
+
+    /* ====== End Shop_Checkout Page RESPONSIVE Here ======*/
+
+
+
+
+    /* ====== Start Shop_Cart Page RESPONSIVE Here ======*/
+    #shop_cart_page {
+        padding: 80px 0;
+    }
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Compare Page RESPONSIVE Here ======*/
+    #shop_compare_page {
+        padding: 80px 0;
+    }
+
+    #shop_compare_page .table-responsive table {
+        border-left: none;
+        border-right: none;
+        width: 1500px;
+    }
+
+    /* ====== End Shop_Compare Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop Wishtlist Page RESPONSIVE Here ======*/
+    #wishtlist_page {
+        padding: 80px 0;
+    }
+
+    /* ====== End Shop Wishtlist Page RESPONSIVE Here ======*/
+
+
+
+    /* ====== Start Error Page RESPONSIVE Here ======*/
+    #error_page {
+        padding: 80px 0 100px;
+    }
+
+    /* ====== End Error Page RESPONSIVE Here Error ======*/
+
+
+    /* ====== Start Contact Page RESPONSIVE Here Error ======*/
+    #contact_page .contact_inneritem {
+        padding: 40px 15px 30px;
+    }
+
+    /* ====== End Contact Page RESPONSIVE Here Error ======*/
+
+
+    /* ====== Start Contact Page RESPONSIVE Here Error ======*/
+    #contact_page {
+        padding: 80px 0;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 30px 15px 20px;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 20px 15px 20px;
+    }
+
+    #contact_page .contact_touch {
+        padding: 60px 0 0px;
+    }
+
+    /* ====== End Contact Page RESPONSIVE Here Error ======*/
+
+
+
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
@@ -661,6 +843,173 @@
     }
 
     /* ====== End Blog Page RESPONSIVE Here ====== */
+
+    /* ====== Start Shop Page RESPONSIVE Here ======*/
+
+
+    #shop_page_product {
+        padding: 60px 0;
+    }
+
+    #shop_page_product .section_content .product_box.single {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ====== End Shop Page RESPONSIVE Here ======*/
+
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 80px 0;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    #shop_details_overview .overview_inner_item a {
+        font-size: 18px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 60px 0 40px;
+    }
+
+    #shop_details_page .shop_details_item {
+        padding-bottom: 30px;
+    }
+
+    #shop_details_related {
+        margin: 60px 0 50px;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    #shop_details_overview .overview_inner_item a {
+        font-size: 16px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Checkout Page RESPONSIVE Here ======*/
+    #shop_checkout_page {
+        padding: 60px 0;
+    }
+
+    #shop_checkout_page .bill_info .coupon_box_left {
+        padding-bottom: 30px;
+    }
+
+    #shop_checkout_page {
+        padding: 40px 0;
+    }
+
+
+    /* ====== End Shop_Checkout Page RESPONSIVE Here ======*/
+
+
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+    #shop_cart_page {
+        padding: 60px 0;
+    }
+
+    #shop_cart_page .coupon_box input {
+        padding: 11px 15px;
+        width: 75%;
+        background-color: var(--white_color);
+        border: 1px solid #E0E0E0;
+    }
+
+    #shop_cart_page .coupon_box .input_coupon {
+        margin-bottom: 20px;
+    }
+
+    #shop_cart_page .coupon_box .submit_coupon .btn_sm {
+        padding: 11px 35px;
+    }
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+    #shop_cart_page {
+        padding: 60px 0;
+    }
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+
+    /* ====== Start Shop_Compare Page RESPONSIVE Here ======*/
+    #shop_compare_page {
+        padding: 70px 0;
+    }
+
+    #shop_compare_page .table-responsive table {
+        border-left: none;
+        border-right: none;
+        width: 1500px;
+    }
+
+    /* ====== End Shop_Compare Page RESPONSIVE Here ======*/
+
+    /* ====== Start Shop_Compare Page RESPONSIVE Here ======*/
+
+    #wishtlist_page .product_lg tbody button {
+        justify-content: center;
+        padding: 15px 50px;
+    }
+
+    /* ======End Shop_Compare Page RESPONSIVE Here======*/
+
+
+    /* ====== Start Whishlist Page RESPONSIVE Here ======*/
+    #wishtlist_page {
+        padding: 0px 0;
+    }
+
+    /* ====== End Whishlist Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Error Page RESPONSIVE Here ======*/
+    #error_page {
+        padding: 70px 0 80px;
+    }
+
+    /* ====== End Error Page RESPONSIVE Here Error ======*/
+
+
+
+    /* ====== Start Contact Page RESPONSIVE Here Error ======*/
+    #contact_page {
+        padding: 60px 0;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 20px 15px 20px;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 20px 15px 20px;
+    }
+
+    #contact_page .contact_touch {
+        padding: 40px 0 0px;
+    }
+
+    /* ====== End Contact Page RESPONSIVE Here Error ======*/
+
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
@@ -864,8 +1213,10 @@
         margin-top: 80px;
     }
 
+
+
     #home_page_essential .section_content .essential_item {
-        padding: 10px 30px;
+        padding: 10px 10px;
     }
 
     #home_page_essential .section_content .essential_img_box {
@@ -1105,6 +1456,11 @@
         font-size: 35px;
     }
 
+    #blog_detail_page .section_content .blog_classic_info_box h3 {
+        font-size: 22px;
+        padding-bottom: 6px 0 15px;
+    }
+
     #blog_detail_page .section_content .blog_classic_info_box .comment_box_main {
         padding: 25px 30px;
         margin: 30px 0px;
@@ -1151,6 +1507,10 @@
         padding: 60px 0;
     }
 
+    #blog_classic_page .blog_box .blog_classic_info_box h3 {
+        font-size: 25px;
+    }
+
     .section_content .blog_box .blog_classic_info_box {
         padding-bottom: 20px;
     }
@@ -1172,7 +1532,134 @@
 
     /* ====== End Blog Page RESPONSIVE Here ====== */
 
+    /* ====== Start Shop Page RESPONSIVE Here ======*/
 
+
+    #shop_page_product {
+        padding: 60px 0;
+    }
+
+    #shop_page_product .section_content .product_box.single {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ====== End Shop Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 60px 0 30px;
+    }
+
+    #shop_details_page .shop_details_item {
+        padding-bottom: 30px;
+    }
+
+    #shop_details_related {
+        margin: 60px 0 50px;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    #shop_details_overview .overview_inner_item a {
+        font-size: 16px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
+
+
+    /* ====== Start Shop_Checkout Page RESPONSIVE Here ======*/
+    #shop_checkout_page {
+        padding: 50px 0;
+    }
+
+    #shop_checkout_page .bill_info .coupon_box_left {
+        padding-bottom: 30px;
+    }
+
+    #shop_checkout_page {
+        padding: 40px 0;
+    }
+
+    #shop_checkout_page .section_content h4 {
+        font-size: 30px;
+
+    }
+
+    /* ====== End Shop_Checkout Page RESPONSIVE Here ======*/
+
+    /* ====== Start Shop_Cart Page RESPONSIVE Here ======*/
+    #shop_cart_page {
+        padding: 40px 0;
+    }
+
+    #shop_cart_page .table_sm .detail_box {
+        padding-bottom: 20px;
+    }
+
+    #shop_cart_page .coupon_box .btn_sm,
+    #shop_cart_page .coupon_box input,
+    #shop_cart_page .coupon_box a {
+        margin: 10px auto;
+    }
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Compare Page RESPONSIVE Here ======*/
+    #shop_compare_page {
+        padding: 60px 0;
+    }
+
+    #shop_compare_page .table-responsive table {
+        border-left: none;
+        border-right: none;
+        width: 1500px;
+    }
+
+    /* ====== End Shop_Compare Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Whishlist Page RESPONSIVE Here ======*/
+    #wishtlist_page {
+        padding: 60px 0;
+    }
+
+    /* ====== End Whishlist Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Error Page RESPONSIVE Here ======*/
+    #error_page {
+        padding: 50px 0 60px;
+    }
+
+    /* ====== End Error Page RESPONSIVE Here Error ======*/
+
+
+
+    /* ====== Start Contact Page RESPONSIVE Here Error ======*/
+    #contact_page {
+        padding: 50px 0;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 20px 15px 20px;
+    }
+
+    #contact_page .contact_touch {
+        padding: 30px 0 0px;
+    }
+
+
+    /* ====== End Contact Page RESPONSIVE Here Error ======*/
 
 }
 
@@ -1641,10 +2128,35 @@
         font-size: 32px;
     }
 
+    #blog_detail_page .section_content .blog_classic_info_box h3 {
+        font-size: 22px;
+    }
+
+    #blog_detail_page .section_content .blog_classic_info_box .blockquote {
+        padding: 21px 0 4px 10px;
+        margin: 20px 0;
+        background-color: var(--bg_color_dark);
+        border-left: 5px solid var(--primary_color_orange_light);
+    }
+
     #blog_detail_page .section_content .blog_classic_info_box .comment_box_main {
-        padding: 25px 30px;
+        padding: 15px 20px 0;
         margin: 0px 0px;
         background-color: var(--bg_color_dark);
+    }
+
+    #blog_detail_page .section_content .blog_classic_info_box .replay_box {
+        margin: 10px 0;
+        padding-bottom: 26px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    #blog_detail_page .section_content .blog_classic_info_box .comment_post_box p {
+        color: var(--p_color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 7px 0 24px;
     }
 
     #blog_detail_page .section_content .blog_classic_info_box .tag_social_box {
@@ -1691,6 +2203,10 @@
         padding: 40px 0;
     }
 
+    #blog_classic_page .blog_box .blog_classic_info_box h3 {
+        font-size: 22px;
+    }
+
     .section_content .blog_box .blog_classic_info_box {
         padding-bottom: 20px;
     }
@@ -1709,5 +2225,146 @@
     }
 
     /* ====== End Blog Page RESPONSIVE Here ====== */
+
+
+    /* ====== Start Shop Page RESPONSIVE Here ======*/
+
+
+    #shop_page_product {
+        padding: 40px 0;
+    }
+
+    #shop_page_product .section_content .product_box.single {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ====== End Shop Page RESPONSIVE Here ======*/
+
+
+
+    /* ====== Start Shop_details Page RESPONSIVE Here ======*/
+    #shop_details_page {
+        padding: 30px 0 20px;
+    }
+
+    #shop_details_page .shop_details_item {
+        padding-bottom: 30px;
+    }
+
+    #blog_detail_page .section_content .blog_classic_info_box h3 {
+        font-size: 22px;
+    }
+
+    #shop_details_page .section_content .shop_details_item .middle_part .Quantity {
+        margin: 20px 10px;
+        padding: 0;
+    }
+
+    #shop_details_related {
+        margin: 30px 0;
+    }
+
+    #shop_details_related .product_info_box .icon_box_24 i {
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+
+    }
+
+    #shop_details_overview .overview_inner_item a {
+        font-size: 16px;
+    }
+
+    #shop_details_page .section_content .shop_details_item .middle_part .sec_btn_lg {
+        padding: 0 20px;
+        height: 50px;
+    }
+
+    /* ====== End Shop_details Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Checkout Page RESPONSIVE Here ======*/
+
+    #shop_checkout_page {
+        padding: 40px 0;
+    }
+
+    #shop_checkout_page .section_content h4 {
+        font-size: 25px;
+
+    }
+
+    /* ====== End Shop_Checkout Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Cart Page RESPONSIVE Here ======*/
+    #shop_cart_page {
+        padding: 40px 0;
+    }
+
+    #shop_cart_page .table_sm .detail_box {
+        padding-bottom: 20px;
+    }
+
+    #shop_cart_page .coupon_box .btn_sm,
+    #shop_cart_page .coupon_box a,
+    #shop_cart_page .coupon_box input {
+        text-align: center;
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    /* ====== End Shop_Cart Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Shop_Compare Page RESPONSIVE Here ======*/
+    #shop_compare_page {
+        padding: 40px 0;
+    }
+
+    #shop_compare_page .table-responsive table {
+        border-left: none;
+        border-right: none;
+        width: 1500px;
+    }
+
+    /* ====== End Shop_Compare Page RESPONSIVE Here ======*/
+
+
+    /* ====== Start Whislist Page RESPONSIVE Here ======*/
+    #wishtlist_page {
+        padding: 50px 0;
+    }
+
+    /* ====== End Whislist Page RESPONSIVE Here ======*/
+
+
+
+    /* ====== Start Error Page RESPONSIVE Here ======*/
+    #error_page {
+        padding: 30px 0 40px;
+    }
+
+    /* ====== End Error Page RESPONSIVE Here Error ======*/
+
+
+
+
+    /* ====== Start Contact Page RESPONSIVE Here Error ======*/
+    #contact_page {
+        padding: 30px 0;
+    }
+
+    #contact_page .contact_inneritem {
+        padding: 0 15px;
+    }
+
+    #contact_page .contact_touch {
+        padding: 30px 0 0px;
+    }
+
+
+    /* ====== End Contact Page RESPONSIVE Here Error ======*/
 
 }
